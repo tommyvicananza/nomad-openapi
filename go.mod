@@ -1,4 +1,4 @@
-module github.com/tommyvicananza/nomad-openapi
+module github.com/tommyvicananza/nomad-openapiv2
 
 go 1.19
 
