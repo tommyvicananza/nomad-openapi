@@ -18,7 +18,8 @@ import (
 // ConsulProxy struct for ConsulProxy
 type ConsulProxy struct {
 	Config *map[string]interface{} `json:"Config,omitempty"`
-	ExposeConfig *ConsulExposeConfig `json:"ExposeConfig,omitempty"`
+	Expose              *ConsulExposeConfig    `mapstructure:"expose" hcl:"expose,block"`
+	ExposeConfig        *ConsulExposeConfig    // Deprecated: only to maintain backwards compatibility. Use Expose instead.
 	LocalServiceAddress *string `json:"LocalServiceAddress,omitempty"`
 	LocalServicePort *int32 `json:"LocalServicePort,omitempty"`
 	Upstreams *[]ConsulUpstream `json:"Upstreams,omitempty"`
