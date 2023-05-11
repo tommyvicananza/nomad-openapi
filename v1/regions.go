@@ -7,7 +7,7 @@ import (
 	"context"
 	"sort"
 
-	client "github.com/hashicorp/nomad-openapi/clients/go/v1"
+	client "github.com/tommyvicananza/nomad-openapi/clients/go/v1"
 )
 
 type Regions struct {

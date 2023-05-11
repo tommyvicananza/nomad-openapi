@@ -6,10 +6,10 @@ package v1
 import (
 	"testing"
 
-	client "github.com/hashicorp/nomad-openapi/clients/go/v1"
 	"github.com/hashicorp/nomad/command/agent"
 	"github.com/hashicorp/nomad/helper/pointer"
 	"github.com/stretchr/testify/require"
+	client "github.com/tommyvicananza/nomad-openapi/clients/go/v1"
 )
 
 // NOTE: this is temporary until Int32ToPtr gets added to nomad/helper

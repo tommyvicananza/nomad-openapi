@@ -1,4 +1,4 @@
-module github.com/hashicorp/nomad-openapi/generator
+module github.com/tommyvicananza/nomad-openapi/generator
 
 go 1.19
 

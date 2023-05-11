@@ -9,12 +9,12 @@ import (
 	"testing"
 	"time"
 
-	client "github.com/hashicorp/nomad-openapi/clients/go/v1"
 	"github.com/hashicorp/nomad/command/agent"
 	"github.com/hashicorp/nomad/helper/uuid"
 	"github.com/hashicorp/nomad/nomad/mock"
 	"github.com/hashicorp/nomad/nomad/structs"
 	"github.com/stretchr/testify/require"
+	client "github.com/tommyvicananza/nomad-openapi/clients/go/v1"
 )
 
 func TestJobs(t *testing.T) {

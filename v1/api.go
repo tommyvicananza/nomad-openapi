@@ -17,7 +17,7 @@ import (
 	"time"
 
 	"github.com/hashicorp/cronexpr"
-	client "github.com/hashicorp/nomad-openapi/clients/go/v1"
+	client "github.com/tommyvicananza/nomad-openapi/clients/go/v1"
 )
 
 type Client struct {
