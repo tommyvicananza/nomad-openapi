@@ -14,7 +14,7 @@ import (
 	"github.com/hashicorp/nomad/nomad/mock"
 	"github.com/hashicorp/nomad/nomad/structs"
 	"github.com/stretchr/testify/require"
-	client "github.com/tommyvicananza/nomad-openapi/clients/go/v1"
+	client "github.com/tommyvicananza/nomad-openapiv2/clients/go/v1"
 )
 
 func TestJobs(t *testing.T) {
