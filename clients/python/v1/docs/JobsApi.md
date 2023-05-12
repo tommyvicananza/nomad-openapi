@@ -2139,14 +2139,6 @@ with nomad_client.ApiClient(configuration) as api_client:
         preserve_counts=True,
         region="region_example",
         secret_id="secret_id_example",
-        submission=JobSubmission(
-            format="format_example",
-            source="source_example",
-            variable_flags={
-                "key": "key_example",
-            },
-            variables="variables_example",
-        ),
     ) # JobRegisterRequest | 
     region = "region_example" # str | Filters results based on the specified region. (optional)
     namespace = "namespace_example" # str | Filters results based on the specified namespace. (optional)
@@ -2452,7 +2444,6 @@ with nomad_client.ApiClient(configuration) as api_client:
     jobs_parse_request = JobsParseRequest(
         canonicalize=True,
         job_hcl="job_hcl_example",
-        variables="variables_example",
         hclv1=True,
     ) # JobsParseRequest | 
 
@@ -6287,14 +6278,6 @@ with nomad_client.ApiClient(configuration) as api_client:
         preserve_counts=True,
         region="region_example",
         secret_id="secret_id_example",
-        submission=JobSubmission(
-            format="format_example",
-            source="source_example",
-            variable_flags={
-                "key": "key_example",
-            },
-            variables="variables_example",
-        ),
     ) # JobRegisterRequest | 
     region = "region_example" # str | Filters results based on the specified region. (optional)
     namespace = "namespace_example" # str | Filters results based on the specified namespace. (optional)

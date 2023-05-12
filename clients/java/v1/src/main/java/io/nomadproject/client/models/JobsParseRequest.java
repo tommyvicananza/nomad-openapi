@@ -37,10 +37,6 @@ public class JobsParseRequest {
   @SerializedName(SERIALIZED_NAME_JOB_H_C_L)
   private String jobHCL;
 
-  public static final String SERIALIZED_NAME_VARIABLES = "Variables";
-  @SerializedName(SERIALIZED_NAME_VARIABLES)
-  private String variables;
-
   public static final String SERIALIZED_NAME_HCLV1 = "hclv1";
   @SerializedName(SERIALIZED_NAME_HCLV1)
   private Boolean hclv1;
@@ -92,29 +88,6 @@ public class JobsParseRequest {
   }
 
 
-  public JobsParseRequest variables(String variables) {
-    
-    this.variables = variables;
-    return this;
-  }
-
-   /**
-   * Get variables
-   * @return variables
-  **/
-  @javax.annotation.Nullable
-  @ApiModelProperty(value = "")
-
-  public String getVariables() {
-    return variables;
-  }
-
-
-  public void setVariables(String variables) {
-    this.variables = variables;
-  }
-
-
   public JobsParseRequest hclv1(Boolean hclv1) {
     
     this.hclv1 = hclv1;
@@ -149,13 +122,12 @@ public class JobsParseRequest {
     JobsParseRequest jobsParseRequest = (JobsParseRequest) o;
     return Objects.equals(this.canonicalize, jobsParseRequest.canonicalize) &&
         Objects.equals(this.jobHCL, jobsParseRequest.jobHCL) &&
-        Objects.equals(this.variables, jobsParseRequest.variables) &&
         Objects.equals(this.hclv1, jobsParseRequest.hclv1);
   }
 
   @Override
   public int hashCode() {
-    return Objects.hash(canonicalize, jobHCL, variables, hclv1);
+    return Objects.hash(canonicalize, jobHCL, hclv1);
   }
 
   @Override
@@ -164,7 +136,6 @@ public class JobsParseRequest {
     sb.append("class JobsParseRequest {\n");
     sb.append("    canonicalize: ").append(toIndentedString(canonicalize)).append("\n");
     sb.append("    jobHCL: ").append(toIndentedString(jobHCL)).append("\n");
-    sb.append("    variables: ").append(toIndentedString(variables)).append("\n");
     sb.append("    hclv1: ").append(toIndentedString(hclv1)).append("\n");
     sb.append("}");
     return sb.toString();

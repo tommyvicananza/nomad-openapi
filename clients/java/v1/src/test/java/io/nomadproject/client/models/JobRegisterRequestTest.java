@@ -19,7 +19,6 @@ import com.google.gson.annotations.SerializedName;
 import com.google.gson.stream.JsonReader;
 import com.google.gson.stream.JsonWriter;
 import io.nomadproject.client.models.Job;
-import io.nomadproject.client.models.JobSubmission;
 import io.swagger.annotations.ApiModel;
 import io.swagger.annotations.ApiModelProperty;
 import java.io.IOException;
@@ -112,14 +111,6 @@ public class JobRegisterRequestTest {
     @Test
     public void secretIDTest() {
         // TODO: test secretID
-    }
-
-    /**
-     * Test the property 'submission'
-     */
-    @Test
-    public void submissionTest() {
-        // TODO: test submission
     }
 
 }

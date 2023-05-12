@@ -13,7 +13,6 @@
 
 import ApiClient from '../ApiClient';
 import Job from './Job';
-import JobSubmission from './JobSubmission';
 
 /**
  * The JobRegisterRequest model module.
@@ -76,9 +75,6 @@ class JobRegisterRequest {
             if (data.hasOwnProperty('SecretID')) {
                 obj['SecretID'] = ApiClient.convertToType(data['SecretID'], 'String');
             }
-            if (data.hasOwnProperty('Submission')) {
-                obj['Submission'] = JobSubmission.constructFromObject(data['Submission']);
-            }
         }
         return obj;
     }
@@ -130,11 +126,6 @@ JobRegisterRequest.prototype['Region'] = undefined;
  * @member {String} SecretID
  */
 JobRegisterRequest.prototype['SecretID'] = undefined;
-
-/**
- * @member {module:model/JobSubmission} Submission
- */
-JobRegisterRequest.prototype['Submission'] = undefined;
 
 
 

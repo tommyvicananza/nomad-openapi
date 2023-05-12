@@ -53,9 +53,6 @@ class JobsParseRequest {
             if (data.hasOwnProperty('JobHCL')) {
                 obj['JobHCL'] = ApiClient.convertToType(data['JobHCL'], 'String');
             }
-            if (data.hasOwnProperty('Variables')) {
-                obj['Variables'] = ApiClient.convertToType(data['Variables'], 'String');
-            }
             if (data.hasOwnProperty('hclv1')) {
                 obj['hclv1'] = ApiClient.convertToType(data['hclv1'], 'Boolean');
             }
@@ -75,11 +72,6 @@ JobsParseRequest.prototype['Canonicalize'] = undefined;
  * @member {String} JobHCL
  */
 JobsParseRequest.prototype['JobHCL'] = undefined;
-
-/**
- * @member {String} Variables
- */
-JobsParseRequest.prototype['Variables'] = undefined;
 
 /**
  * @member {Boolean} hclv1

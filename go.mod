@@ -5,7 +5,7 @@ go 1.19
 require (
 	github.com/hashicorp/cronexpr v1.1.1
 	github.com/hashicorp/nomad v0.11.8
-	github.com/hashicorp/nomad/api v0.0.0-20230511193054-ca00af7b8199 // indirect
+	github.com/hashicorp/nomad/api v0.0.0-20230505125014-3d63bc62b35c // indirect
 	github.com/stretchr/testify v1.8.2
 	golang.org/x/oauth2 v0.4.0
 )

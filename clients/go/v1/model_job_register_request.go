@@ -26,7 +26,6 @@ type JobRegisterRequest struct {
 	PreserveCounts *bool `json:"PreserveCounts,omitempty"`
 	Region *string `json:"Region,omitempty"`
 	SecretID *string `json:"SecretID,omitempty"`
-	Submission *JobSubmission `json:"Submission,omitempty"`
 }
 
 // NewJobRegisterRequest instantiates a new JobRegisterRequest object
@@ -334,38 +333,6 @@ func (o *JobRegisterRequest) SetSecretID(v string) {
 	o.SecretID = &v
 }
 
-// GetSubmission returns the Submission field value if set, zero value otherwise.
-func (o *JobRegisterRequest) GetSubmission() JobSubmission {
-	if o == nil || o.Submission == nil {
-		var ret JobSubmission
-		return ret
-	}
-	return *o.Submission
-}
-
-// GetSubmissionOk returns a tuple with the Submission field value if set, nil otherwise
-// and a boolean to check if the value has been set.
-func (o *JobRegisterRequest) GetSubmissionOk() (*JobSubmission, bool) {
-	if o == nil || o.Submission == nil {
-		return nil, false
-	}
-	return o.Submission, true
-}
-
-// HasSubmission returns a boolean if a field has been set.
-func (o *JobRegisterRequest) HasSubmission() bool {
-	if o != nil && o.Submission != nil {
-		return true
-	}
-
-	return false
-}
-
-// SetSubmission gets a reference to the given JobSubmission and assigns it to the Submission field.
-func (o *JobRegisterRequest) SetSubmission(v JobSubmission) {
-	o.Submission = &v
-}
-
 func (o JobRegisterRequest) MarshalJSON() ([]byte, error) {
 	toSerialize := map[string]interface{}{}
 	if o.EnforceIndex != nil {
@@ -394,9 +361,6 @@ func (o JobRegisterRequest) MarshalJSON() ([]byte, error) {
 	}
 	if o.SecretID != nil {
 		toSerialize["SecretID"] = o.SecretID
-	}
-	if o.Submission != nil {
-		toSerialize["Submission"] = o.Submission
 	}
 	return json.Marshal(toSerialize)
 }

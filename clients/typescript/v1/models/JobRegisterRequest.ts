@@ -11,7 +11,6 @@
  */
 
 import { Job } from './Job';
-import { JobSubmission } from './JobSubmission';
 import { HttpFile } from '../http/http';
 
 export class JobRegisterRequest {
@@ -24,7 +23,6 @@ export class JobRegisterRequest {
     'preserveCounts'?: boolean;
     'region'?: string;
     'secretID'?: string;
-    'submission'?: JobSubmission;
 
     static readonly discriminator: string | undefined = undefined;
 
@@ -81,12 +79,6 @@ export class JobRegisterRequest {
             "name": "secretID",
             "baseName": "SecretID",
             "type": "string",
-            "format": ""
-        },
-        {
-            "name": "submission",
-            "baseName": "Submission",
-            "type": "JobSubmission",
             "format": ""
         }    ];
 

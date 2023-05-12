@@ -17,8 +17,6 @@ pub struct JobsParseRequest {
     pub canonicalize: Option<bool>,
     #[serde(rename = "JobHCL", skip_serializing_if = "Option::is_none")]
     pub job_hcl: Option<String>,
-    #[serde(rename = "Variables", skip_serializing_if = "Option::is_none")]
-    pub variables: Option<String>,
     #[serde(rename = "hclv1", skip_serializing_if = "Option::is_none")]
     pub hclv1: Option<bool>,
 }
@@ -28,7 +26,6 @@ impl JobsParseRequest {
         JobsParseRequest {
             canonicalize: None,
             job_hcl: None,
-            variables: None,
             hclv1: None,
         }
     }

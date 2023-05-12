@@ -33,8 +33,6 @@ module NomadClient
 
     attr_accessor :secret_id
 
-    attr_accessor :submission
-
     # Attribute mapping from ruby-style variable name to JSON key.
     def self.attribute_map
       {
@@ -46,8 +44,7 @@ module NomadClient
         :'policy_override' => :'PolicyOverride',
         :'preserve_counts' => :'PreserveCounts',
         :'region' => :'Region',
-        :'secret_id' => :'SecretID',
-        :'submission' => :'Submission'
+        :'secret_id' => :'SecretID'
       }
     end
 
@@ -67,8 +64,7 @@ module NomadClient
         :'policy_override' => :'Boolean',
         :'preserve_counts' => :'Boolean',
         :'region' => :'String',
-        :'secret_id' => :'String',
-        :'submission' => :'JobSubmission'
+        :'secret_id' => :'String'
       }
     end
 
@@ -128,10 +124,6 @@ module NomadClient
       if attributes.key?(:'secret_id')
         self.secret_id = attributes[:'secret_id']
       end
-
-      if attributes.key?(:'submission')
-        self.submission = attributes[:'submission']
-      end
     end
 
     # Show invalid properties with the reasons. Usually used together with valid?
@@ -184,8 +176,7 @@ module NomadClient
           policy_override == o.policy_override &&
           preserve_counts == o.preserve_counts &&
           region == o.region &&
-          secret_id == o.secret_id &&
-          submission == o.submission
+          secret_id == o.secret_id
     end
 
     # @see the `==` method
@@ -197,7 +188,7 @@ module NomadClient
     # Calculates hash code according to all attributes.
     # @return [Integer] Hash code
     def hash
-      [enforce_index, eval_priority, job, job_modify_index, namespace, policy_override, preserve_counts, region, secret_id, submission].hash
+      [enforce_index, eval_priority, job, job_modify_index, namespace, policy_override, preserve_counts, region, secret_id].hash
     end
 
     # Builds the object from hash

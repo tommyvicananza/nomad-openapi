@@ -114,7 +114,6 @@ import JobRevertRequest from './model/JobRevertRequest';
 import JobScaleStatusResponse from './model/JobScaleStatusResponse';
 import JobStabilityRequest from './model/JobStabilityRequest';
 import JobStabilityResponse from './model/JobStabilityResponse';
-import JobSubmission from './model/JobSubmission';
 import JobSummary from './model/JobSummary';
 import JobValidateRequest from './model/JobValidateRequest';
 import JobValidateResponse from './model/JobValidateResponse';
@@ -873,12 +872,6 @@ export {
      * @property {module:model/JobStabilityResponse}
      */
     JobStabilityResponse,
-
-    /**
-     * The JobSubmission model constructor.
-     * @property {module:model/JobSubmission}
-     */
-    JobSubmission,
 
     /**
      * The JobSummary model constructor.

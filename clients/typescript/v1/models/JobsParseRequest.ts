@@ -15,7 +15,6 @@ import { HttpFile } from '../http/http';
 export class JobsParseRequest {
     'canonicalize'?: boolean;
     'jobHCL'?: string;
-    'variables'?: string;
     'hclv1'?: boolean;
 
     static readonly discriminator: string | undefined = undefined;
@@ -30,12 +29,6 @@ export class JobsParseRequest {
         {
             "name": "jobHCL",
             "baseName": "JobHCL",
-            "type": "string",
-            "format": ""
-        },
-        {
-            "name": "variables",
-            "baseName": "Variables",
             "type": "string",
             "format": ""
         },

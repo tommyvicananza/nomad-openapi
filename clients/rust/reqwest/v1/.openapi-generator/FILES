@@ -107,7 +107,6 @@ docs/JobRevertRequest.md
 docs/JobScaleStatusResponse.md
 docs/JobStabilityRequest.md
 docs/JobStabilityResponse.md
-docs/JobSubmission.md
 docs/JobSummary.md
 docs/JobValidateRequest.md
 docs/JobValidateResponse.md
@@ -338,7 +337,6 @@ src/models/job_revert_request.rs
 src/models/job_scale_status_response.rs
 src/models/job_stability_request.rs
 src/models/job_stability_response.rs
-src/models/job_submission.rs
 src/models/job_summary.rs
 src/models/job_validate_request.rs
 src/models/job_validate_response.rs

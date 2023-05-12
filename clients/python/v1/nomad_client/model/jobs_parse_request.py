@@ -84,7 +84,6 @@ class JobsParseRequest(ModelNormal):
         return {
             'canonicalize': (bool,),  # noqa: E501
             'job_hcl': (str,),  # noqa: E501
-            'variables': (str,),  # noqa: E501
             'hclv1': (bool,),  # noqa: E501
         }
 
@@ -96,7 +95,6 @@ class JobsParseRequest(ModelNormal):
     attribute_map = {
         'canonicalize': 'Canonicalize',  # noqa: E501
         'job_hcl': 'JobHCL',  # noqa: E501
-        'variables': 'Variables',  # noqa: E501
         'hclv1': 'hclv1',  # noqa: E501
     }
 
@@ -143,7 +141,6 @@ class JobsParseRequest(ModelNormal):
                                 _visited_composed_classes = (Animal,)
             canonicalize (bool): [optional]  # noqa: E501
             job_hcl (str): [optional]  # noqa: E501
-            variables (str): [optional]  # noqa: E501
             hclv1 (bool): [optional]  # noqa: E501
         """
 
@@ -228,7 +225,6 @@ class JobsParseRequest(ModelNormal):
                                 _visited_composed_classes = (Animal,)
             canonicalize (bool): [optional]  # noqa: E501
             job_hcl (str): [optional]  # noqa: E501
-            variables (str): [optional]  # noqa: E501
             hclv1 (bool): [optional]  # noqa: E501
         """
 

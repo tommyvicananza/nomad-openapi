@@ -336,7 +336,6 @@ Class | Method | HTTP request | Description
  - [nomad-client.JobScaleStatusResponse](docs/JobScaleStatusResponse.md)
  - [nomad-client.JobStabilityRequest](docs/JobStabilityRequest.md)
  - [nomad-client.JobStabilityResponse](docs/JobStabilityResponse.md)
- - [nomad-client.JobSubmission](docs/JobSubmission.md)
  - [nomad-client.JobSummary](docs/JobSummary.md)
  - [nomad-client.JobValidateRequest](docs/JobValidateRequest.md)
  - [nomad-client.JobValidateResponse](docs/JobValidateResponse.md)

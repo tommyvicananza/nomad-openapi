@@ -110,7 +110,6 @@ docs/JobRevertRequest.md
 docs/JobScaleStatusResponse.md
 docs/JobStabilityRequest.md
 docs/JobStabilityResponse.md
-docs/JobSubmission.md
 docs/JobSummary.md
 docs/JobValidateRequest.md
 docs/JobValidateResponse.md
@@ -342,7 +341,6 @@ lib/nomad_client/models/job_revert_request.rb
 lib/nomad_client/models/job_scale_status_response.rb
 lib/nomad_client/models/job_stability_request.rb
 lib/nomad_client/models/job_stability_response.rb
-lib/nomad_client/models/job_submission.rb
 lib/nomad_client/models/job_summary.rb
 lib/nomad_client/models/job_validate_request.rb
 lib/nomad_client/models/job_validate_response.rb
@@ -561,7 +559,6 @@ spec/models/job_scale_status_response_spec.rb
 spec/models/job_spec.rb
 spec/models/job_stability_request_spec.rb
 spec/models/job_stability_response_spec.rb
-spec/models/job_submission_spec.rb
 spec/models/job_summary_spec.rb
 spec/models/job_validate_request_spec.rb
 spec/models/job_validate_response_spec.rb

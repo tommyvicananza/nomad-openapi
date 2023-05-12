@@ -302,7 +302,6 @@ Class | Method | HTTP request | Description
  - [JobScaleStatusResponse](docs/JobScaleStatusResponse.md)
  - [JobStabilityRequest](docs/JobStabilityRequest.md)
  - [JobStabilityResponse](docs/JobStabilityResponse.md)
- - [JobSubmission](docs/JobSubmission.md)
  - [JobSummary](docs/JobSummary.md)
  - [JobValidateRequest](docs/JobValidateRequest.md)
  - [JobValidateResponse](docs/JobValidateResponse.md)

@@ -19,8 +19,6 @@ module NomadClient
 
     attr_accessor :job_hcl
 
-    attr_accessor :variables
-
     attr_accessor :hclv1
 
     # Attribute mapping from ruby-style variable name to JSON key.
@@ -28,7 +26,6 @@ module NomadClient
       {
         :'canonicalize' => :'Canonicalize',
         :'job_hcl' => :'JobHCL',
-        :'variables' => :'Variables',
         :'hclv1' => :'hclv1'
       }
     end
@@ -43,7 +40,6 @@ module NomadClient
       {
         :'canonicalize' => :'Boolean',
         :'job_hcl' => :'String',
-        :'variables' => :'String',
         :'hclv1' => :'Boolean'
       }
     end
@@ -77,10 +73,6 @@ module NomadClient
         self.job_hcl = attributes[:'job_hcl']
       end
 
-      if attributes.key?(:'variables')
-        self.variables = attributes[:'variables']
-      end
-
       if attributes.key?(:'hclv1')
         self.hclv1 = attributes[:'hclv1']
       end
@@ -106,7 +98,6 @@ module NomadClient
       self.class == o.class &&
           canonicalize == o.canonicalize &&
           job_hcl == o.job_hcl &&
-          variables == o.variables &&
           hclv1 == o.hclv1
     end
 
@@ -119,7 +110,7 @@ module NomadClient
     # Calculates hash code according to all attributes.
     # @return [Integer] Hash code
     def hash
-      [canonicalize, job_hcl, variables, hclv1].hash
+      [canonicalize, job_hcl, hclv1].hash
     end
 
     # Builds the object from hash

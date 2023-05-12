@@ -104,7 +104,6 @@ import { JobRevertRequest } from '../models/JobRevertRequest';
 import { JobScaleStatusResponse } from '../models/JobScaleStatusResponse';
 import { JobStabilityRequest } from '../models/JobStabilityRequest';
 import { JobStabilityResponse } from '../models/JobStabilityResponse';
-import { JobSubmission } from '../models/JobSubmission';
 import { JobSummary } from '../models/JobSummary';
 import { JobValidateRequest } from '../models/JobValidateRequest';
 import { JobValidateResponse } from '../models/JobValidateResponse';

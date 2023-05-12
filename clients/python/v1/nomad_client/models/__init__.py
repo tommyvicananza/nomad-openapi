@@ -112,7 +112,6 @@ from nomad_client.model.job_revert_request import JobRevertRequest
 from nomad_client.model.job_scale_status_response import JobScaleStatusResponse
 from nomad_client.model.job_stability_request import JobStabilityRequest
 from nomad_client.model.job_stability_response import JobStabilityResponse
-from nomad_client.model.job_submission import JobSubmission
 from nomad_client.model.job_summary import JobSummary
 from nomad_client.model.job_validate_request import JobValidateRequest
 from nomad_client.model.job_validate_response import JobValidateResponse

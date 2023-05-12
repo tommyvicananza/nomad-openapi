@@ -7,7 +7,7 @@ require (
 	github.com/ghodss/yaml v1.0.0
 	github.com/hashicorp/go-hclog v1.4.0
 	github.com/hashicorp/nomad v1.5.5
-	github.com/hashicorp/nomad/api v0.0.0-20230511193054-ca00af7b8199
+	github.com/hashicorp/nomad/api v0.0.0-20230505125014-3d63bc62b35c
 	github.com/stretchr/testify v1.8.2
 )
 

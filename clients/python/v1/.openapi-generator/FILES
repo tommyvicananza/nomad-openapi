@@ -108,7 +108,6 @@ docs/JobRevertRequest.md
 docs/JobScaleStatusResponse.md
 docs/JobStabilityRequest.md
 docs/JobStabilityResponse.md
-docs/JobSubmission.md
 docs/JobSummary.md
 docs/JobValidateRequest.md
 docs/JobValidateResponse.md
@@ -350,7 +349,6 @@ nomad_client/model/job_revert_request.py
 nomad_client/model/job_scale_status_response.py
 nomad_client/model/job_stability_request.py
 nomad_client/model/job_stability_response.py
-nomad_client/model/job_submission.py
 nomad_client/model/job_summary.py
 nomad_client/model/job_validate_request.py
 nomad_client/model/job_validate_response.py
@@ -479,7 +477,6 @@ test/test_evaluation_stub.py
 test/test_evaluations_api.py
 test/test_host_network_info.py
 test/test_job_acl.py
-test/test_job_submission.py
 test/test_namespace_capabilities.py
 test/test_one_time_token.py
 test/test_one_time_token_exchange_request.py

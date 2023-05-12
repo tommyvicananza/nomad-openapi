@@ -37,12 +37,6 @@ describe NomadClient::JobsParseRequest do
     end
   end
 
-  describe 'test attribute "variables"' do
-    it 'should work' do
-      # assertion here. ref: https://www.relishapp.com/rspec/rspec-expectations/docs/built-in-matchers
-    end
-  end
-
   describe 'test attribute "hclv1"' do
     it 'should work' do
       # assertion here. ref: https://www.relishapp.com/rspec/rspec-expectations/docs/built-in-matchers

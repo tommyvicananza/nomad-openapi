@@ -57,14 +57,6 @@ public class JobsParseRequestTest {
     }
 
     /**
-     * Test the property 'variables'
-     */
-    @Test
-    public void variablesTest() {
-        // TODO: test variables
-    }
-
-    /**
      * Test the property 'hclv1'
      */
     @Test

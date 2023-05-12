@@ -107,7 +107,6 @@ docs/JobRevertRequest.md
 docs/JobScaleStatusResponse.md
 docs/JobStabilityRequest.md
 docs/JobStabilityResponse.md
-docs/JobSubmission.md
 docs/JobSummary.md
 docs/JobValidateRequest.md
 docs/JobValidateResponse.md
@@ -339,7 +338,6 @@ src/model/JobRevertRequest.js
 src/model/JobScaleStatusResponse.js
 src/model/JobStabilityRequest.js
 src/model/JobStabilityResponse.js
-src/model/JobSubmission.js
 src/model/JobSummary.js
 src/model/JobValidateRequest.js
 src/model/JobValidateResponse.js
@@ -461,7 +459,6 @@ test/model/DeploymentUpdateResponse.spec.js
 test/model/EvaluationStub.spec.js
 test/model/HostNetworkInfo.spec.js
 test/model/JobACL.spec.js
-test/model/JobSubmission.spec.js
 test/model/NamespaceCapabilities.spec.js
 test/model/OneTimeToken.spec.js
 test/model/OneTimeTokenExchangeRequest.spec.js

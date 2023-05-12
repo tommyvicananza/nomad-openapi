@@ -200,8 +200,6 @@ pub mod job_stability_request;
 pub use self::job_stability_request::JobStabilityRequest;
 pub mod job_stability_response;
 pub use self::job_stability_response::JobStabilityResponse;
-pub mod job_submission;
-pub use self::job_submission::JobSubmission;
 pub mod job_summary;
 pub use self::job_summary::JobSummary;
 pub mod job_validate_request;

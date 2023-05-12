@@ -3914,8 +3914,6 @@ components:
           type: string
         SecretID:
           type: string
-        Submission:
-          $ref: '#/components/schemas/JobSubmission'
       type: object
     JobRegisterResponse:
       properties:
@@ -4014,19 +4012,6 @@ components:
           minimum: 0
           type: integer
       type: object
-    JobSubmission:
-      properties:
-        Format:
-          type: string
-        Source:
-          type: string
-        VariableFlags:
-          additionalProperties:
-            type: string
-          type: object
-        Variables:
-          type: string
-      type: object
     JobSummary:
       properties:
         Children:
@@ -4102,8 +4087,6 @@ components:
         Canonicalize:
           type: boolean
         JobHCL:
-          type: string
-        Variables:
           type: string
         hclv1:
           type: boolean

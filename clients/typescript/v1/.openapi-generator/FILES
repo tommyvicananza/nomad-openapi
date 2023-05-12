@@ -127,7 +127,6 @@ models/JobRevertRequest.ts
 models/JobScaleStatusResponse.ts
 models/JobStabilityRequest.ts
 models/JobStabilityResponse.ts
-models/JobSubmission.ts
 models/JobSummary.ts
 models/JobValidateRequest.ts
 models/JobValidateResponse.ts

@@ -99,7 +99,6 @@ export * from './JobRevertRequest';
 export * from './JobScaleStatusResponse';
 export * from './JobStabilityRequest';
 export * from './JobStabilityResponse';
-export * from './JobSubmission';
 export * from './JobSummary';
 export * from './JobValidateRequest';
 export * from './JobValidateResponse';
@@ -297,7 +296,6 @@ import { JobRevertRequest } from './JobRevertRequest';
 import { JobScaleStatusResponse } from './JobScaleStatusResponse';
 import { JobStabilityRequest } from './JobStabilityRequest';
 import { JobStabilityResponse } from './JobStabilityResponse';
-import { JobSubmission } from './JobSubmission';
 import { JobSummary } from './JobSummary';
 import { JobValidateRequest } from './JobValidateRequest';
 import { JobValidateResponse } from './JobValidateResponse';
@@ -517,7 +515,6 @@ let typeMap: {[index: string]: any} = {
     "JobScaleStatusResponse": JobScaleStatusResponse,
     "JobStabilityRequest": JobStabilityRequest,
     "JobStabilityResponse": JobStabilityResponse,
-    "JobSubmission": JobSubmission,
     "JobSummary": JobSummary,
     "JobValidateRequest": JobValidateRequest,
     "JobValidateResponse": JobValidateResponse,
