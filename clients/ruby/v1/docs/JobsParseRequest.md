@@ -6,6 +6,7 @@
 | ---- | ---- | ----------- | ----- |
 | **canonicalize** | **Boolean** |  | [optional] |
 | **job_hcl** | **String** |  | [optional] |
+| **variables** | **String** |  | [optional] |
 | **hclv1** | **Boolean** |  | [optional] |
 
 ## Example
@@ -16,6 +17,7 @@ require 'nomad_client'
 instance = NomadClient::JobsParseRequest.new(
   canonicalize: null,
   job_hcl: null,
+  variables: null,
   hclv1: null
 )
 ```

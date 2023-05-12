@@ -4,6 +4,8 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
+**disabled** | Option<**bool**> |  | [optional]
+**enabled** | Option<**bool**> |  | [optional]
 **max_file_size_mb** | Option<**i32**> |  | [optional]
 **max_files** | Option<**i32**> |  | [optional]
 

@@ -1,6 +1,3 @@
-// Copyright (c) HashiCorp, Inc.
-// SPDX-License-Identifier: MPL-2.0
-
 /*
  * Nomad
  *
@@ -18,6 +15,8 @@
 pub struct ConsulSidecarService {
     #[serde(rename = "DisableDefaultTCPCheck", skip_serializing_if = "Option::is_none")]
     pub disable_default_tcp_check: Option<bool>,
+    #[serde(rename = "Meta", skip_serializing_if = "Option::is_none")]
+    pub meta: Option<::std::collections::HashMap<String, String>>,
     #[serde(rename = "Port", skip_serializing_if = "Option::is_none")]
     pub port: Option<String>,
     #[serde(rename = "Proxy", skip_serializing_if = "Option::is_none")]
@@ -30,6 +29,7 @@ impl ConsulSidecarService {
     pub fn new() -> ConsulSidecarService {
         ConsulSidecarService {
             disable_default_tcp_check: None,
+            meta: None,
             port: None,
             proxy: None,
             tags: None,

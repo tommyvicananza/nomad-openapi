@@ -36,9 +36,9 @@ Finally add this to the Gemfile:
 
 ### Install from Git
 
-If the Ruby gem is hosted at a git repository: https://github.com/tommyvicananza/nomad-openapi/clients/ruby/v1, then add the following in the Gemfile:
+If the Ruby gem is hosted at a git repository: https://github.com/hashicorp/nomad-openapi/clients/ruby/v1, then add the following in the Gemfile:
 
-    gem 'nomad_client', :git => 'https://github.com/tommyvicananza/nomad-openapi/clients/ruby/v1.git'
+    gem 'nomad_client', :git => 'https://github.com/hashicorp/nomad-openapi/clients/ruby/v1.git'
 
 ### Include the Ruby code directly
 
@@ -291,6 +291,7 @@ Class | Method | HTTP request | Description
  - [NomadClient::JobScaleStatusResponse](docs/JobScaleStatusResponse.md)
  - [NomadClient::JobStabilityRequest](docs/JobStabilityRequest.md)
  - [NomadClient::JobStabilityResponse](docs/JobStabilityResponse.md)
+ - [NomadClient::JobSubmission](docs/JobSubmission.md)
  - [NomadClient::JobSummary](docs/JobSummary.md)
  - [NomadClient::JobValidateRequest](docs/JobValidateRequest.md)
  - [NomadClient::JobValidateResponse](docs/JobValidateResponse.md)
@@ -385,6 +386,7 @@ Class | Method | HTTP request | Description
  - [NomadClient::VolumeMount](docs/VolumeMount.md)
  - [NomadClient::VolumeRequest](docs/VolumeRequest.md)
  - [NomadClient::WaitConfig](docs/WaitConfig.md)
+ - [NomadClient::WorkloadIdentity](docs/WorkloadIdentity.md)
 
 
 ## Documentation for Authorization

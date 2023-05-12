@@ -16,6 +16,7 @@ Name | Type | Description | Notes
 **preserveCounts** | **Boolean** |  |  [optional]
 **region** | **String** |  |  [optional]
 **secretID** | **String** |  |  [optional]
+**submission** | [**JobSubmission**](JobSubmission.md) |  |  [optional]
 
 
 

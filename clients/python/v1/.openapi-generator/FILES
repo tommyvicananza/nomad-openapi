@@ -108,6 +108,7 @@ docs/JobRevertRequest.md
 docs/JobScaleStatusResponse.md
 docs/JobStabilityRequest.md
 docs/JobStabilityResponse.md
+docs/JobSubmission.md
 docs/JobSummary.md
 docs/JobValidateRequest.md
 docs/JobValidateResponse.md
@@ -220,6 +221,7 @@ docs/VolumeMount.md
 docs/VolumeRequest.md
 docs/VolumesApi.md
 docs/WaitConfig.md
+docs/WorkloadIdentity.md
 nomad_client/__init__.py
 nomad_client/api/__init__.py
 nomad_client/api/acl_api.py
@@ -348,6 +350,7 @@ nomad_client/model/job_revert_request.py
 nomad_client/model/job_scale_status_response.py
 nomad_client/model/job_stability_request.py
 nomad_client/model/job_stability_response.py
+nomad_client/model/job_submission.py
 nomad_client/model/job_summary.py
 nomad_client/model/job_validate_request.py
 nomad_client/model/job_validate_response.py
@@ -447,6 +450,7 @@ nomad_client/model/vault.py
 nomad_client/model/volume_mount.py
 nomad_client/model/volume_request.py
 nomad_client/model/wait_config.py
+nomad_client/model/workload_identity.py
 nomad_client/model_utils.py
 nomad_client/models/__init__.py
 nomad_client/rest.py
@@ -475,6 +479,7 @@ test/test_evaluation_stub.py
 test/test_evaluations_api.py
 test/test_host_network_info.py
 test/test_job_acl.py
+test/test_job_submission.py
 test/test_namespace_capabilities.py
 test/test_one_time_token.py
 test/test_one_time_token_exchange_request.py
@@ -499,4 +504,5 @@ test/test_variable_items.py
 test/test_variable_metadata.py
 test/test_variables_api.py
 test/test_wait_config.py
+test/test_workload_identity.py
 tox.ini

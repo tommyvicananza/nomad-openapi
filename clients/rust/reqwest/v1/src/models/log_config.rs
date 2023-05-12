@@ -1,6 +1,3 @@
-// Copyright (c) HashiCorp, Inc.
-// SPDX-License-Identifier: MPL-2.0
-
 /*
  * Nomad
  *
@@ -16,6 +13,10 @@
 
 #[derive(Clone, Debug, PartialEq, Serialize, Deserialize)]
 pub struct LogConfig {
+    #[serde(rename = "Disabled", skip_serializing_if = "Option::is_none")]
+    pub disabled: Option<bool>,
+    #[serde(rename = "Enabled", skip_serializing_if = "Option::is_none")]
+    pub enabled: Option<bool>,
     #[serde(rename = "MaxFileSizeMB", skip_serializing_if = "Option::is_none")]
     pub max_file_size_mb: Option<i32>,
     #[serde(rename = "MaxFiles", skip_serializing_if = "Option::is_none")]
@@ -25,6 +26,8 @@ pub struct LogConfig {
 impl LogConfig {
     pub fn new() -> LogConfig {
         LogConfig {
+            disabled: None,
+            enabled: None,
             max_file_size_mb: None,
             max_files: None,
         }

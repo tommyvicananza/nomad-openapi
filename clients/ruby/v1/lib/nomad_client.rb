@@ -1,6 +1,3 @@
-# Copyright (c) HashiCorp, Inc.
-# SPDX-License-Identifier: MPL-2.0
-
 =begin
 #Nomad
 
@@ -121,6 +118,7 @@ require 'nomad_client/models/job_revert_request'
 require 'nomad_client/models/job_scale_status_response'
 require 'nomad_client/models/job_stability_request'
 require 'nomad_client/models/job_stability_response'
+require 'nomad_client/models/job_submission'
 require 'nomad_client/models/job_summary'
 require 'nomad_client/models/job_validate_request'
 require 'nomad_client/models/job_validate_response'
@@ -215,6 +213,7 @@ require 'nomad_client/models/vault'
 require 'nomad_client/models/volume_mount'
 require 'nomad_client/models/volume_request'
 require 'nomad_client/models/wait_config'
+require 'nomad_client/models/workload_identity'
 
 # APIs
 require 'nomad_client/api/acl_api'

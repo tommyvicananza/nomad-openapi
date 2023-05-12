@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 export * from './ACLPolicy'
 export * from './ACLPolicyListStub'
 export * from './ACLToken'
@@ -104,6 +99,7 @@ export * from './JobRevertRequest'
 export * from './JobScaleStatusResponse'
 export * from './JobStabilityRequest'
 export * from './JobStabilityResponse'
+export * from './JobSubmission'
 export * from './JobSummary'
 export * from './JobValidateRequest'
 export * from './JobValidateResponse'
@@ -198,3 +194,4 @@ export * from './Vault'
 export * from './VolumeMount'
 export * from './VolumeRequest'
 export * from './WaitConfig'
+export * from './WorkloadIdentity'

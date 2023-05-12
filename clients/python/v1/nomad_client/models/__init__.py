@@ -1,6 +1,3 @@
-# Copyright (c) HashiCorp, Inc.
-# SPDX-License-Identifier: MPL-2.0
-
 # flake8: noqa
 
 # import all models into this package
@@ -115,6 +112,7 @@ from nomad_client.model.job_revert_request import JobRevertRequest
 from nomad_client.model.job_scale_status_response import JobScaleStatusResponse
 from nomad_client.model.job_stability_request import JobStabilityRequest
 from nomad_client.model.job_stability_response import JobStabilityResponse
+from nomad_client.model.job_submission import JobSubmission
 from nomad_client.model.job_summary import JobSummary
 from nomad_client.model.job_validate_request import JobValidateRequest
 from nomad_client.model.job_validate_response import JobValidateResponse
@@ -214,3 +212,4 @@ from nomad_client.model.vault import Vault
 from nomad_client.model.volume_mount import VolumeMount
 from nomad_client.model.volume_request import VolumeRequest
 from nomad_client.model.wait_config import WaitConfig
+from nomad_client.model.workload_identity import WorkloadIdentity

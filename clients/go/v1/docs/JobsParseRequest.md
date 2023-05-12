@@ -6,6 +6,7 @@ Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **Canonicalize** | Pointer to **bool** |  | [optional] 
 **JobHCL** | Pointer to **string** |  | [optional] 
+**Variables** | Pointer to **string** |  | [optional] 
 **Hclv1** | Pointer to **bool** |  | [optional] 
 
 ## Methods
@@ -76,6 +77,31 @@ SetJobHCL sets JobHCL field to given value.
 `func (o *JobsParseRequest) HasJobHCL() bool`
 
 HasJobHCL returns a boolean if a field has been set.
+
+### GetVariables
+
+`func (o *JobsParseRequest) GetVariables() string`
+
+GetVariables returns the Variables field if non-nil, zero value otherwise.
+
+### GetVariablesOk
+
+`func (o *JobsParseRequest) GetVariablesOk() (*string, bool)`
+
+GetVariablesOk returns a tuple with the Variables field if it's non-nil, zero value otherwise
+and a boolean to check if the value has been set.
+
+### SetVariables
+
+`func (o *JobsParseRequest) SetVariables(v string)`
+
+SetVariables sets Variables field to given value.
+
+### HasVariables
+
+`func (o *JobsParseRequest) HasVariables() bool`
+
+HasVariables returns a boolean if a field has been set.
 
 ### GetHclv1
 

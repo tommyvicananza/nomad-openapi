@@ -13,6 +13,7 @@
 | **preserve_counts** | **Boolean** |  | [optional] |
 | **region** | **String** |  | [optional] |
 | **secret_id** | **String** |  | [optional] |
+| **submission** | [**JobSubmission**](JobSubmission.md) |  | [optional] |
 
 ## Example
 
@@ -28,7 +29,8 @@ instance = NomadClient::JobRegisterRequest.new(
   policy_override: null,
   preserve_counts: null,
   region: null,
-  secret_id: null
+  secret_id: null,
+  submission: null
 )
 ```
 

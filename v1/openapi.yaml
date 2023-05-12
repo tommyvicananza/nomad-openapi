@@ -1979,6 +1979,9 @@ components:
         CreateTime:
           format: date-time
           type: string
+        ExpirationTime:
+          format: date-time
+          type: string
         Global:
           type: boolean
         ModifyIndex:
@@ -1996,9 +1999,6 @@ components:
             $ref: '#/components/schemas/ACLTokenRoleLink'
           type: array
         Type:
-          type: string
-        expiration_time:
-          format: date-time
           type: string
       type: object
     ACLTokenRoleLink:
@@ -2868,6 +2868,10 @@ components:
           items:
             $ref: '#/components/schemas/ConsulExposePath'
           type: array
+        Paths:
+          items:
+            $ref: '#/components/schemas/ConsulExposePath'
+          type: array
       type: object
     ConsulExposePath:
       properties:
@@ -2984,6 +2988,8 @@ components:
         Config:
           additionalProperties: {}
           type: object
+        Expose:
+          $ref: '#/components/schemas/ConsulExposeConfig'
         ExposeConfig:
           $ref: '#/components/schemas/ConsulExposeConfig'
         LocalServiceAddress:
@@ -2999,6 +3005,10 @@ components:
       properties:
         DisableDefaultTCPCheck:
           type: boolean
+        Meta:
+          additionalProperties:
+            type: string
+          type: object
         Port:
           type: string
         Proxy:
@@ -3017,6 +3027,9 @@ components:
       type: object
     ConsulUpstream:
       properties:
+        Config:
+          additionalProperties: {}
+          type: object
         Datacenter:
           type: string
         DestinationName:
@@ -3743,6 +3756,8 @@ components:
       type: object
     JobDispatchRequest:
       properties:
+        IdPrefixTemplate:
+          type: string
         JobID:
           type: string
         Meta:
@@ -3806,6 +3821,10 @@ components:
           type: integer
         JobSummary:
           $ref: '#/components/schemas/JobSummary'
+        Meta:
+          additionalProperties:
+            type: string
+          type: object
         ModifyIndex:
           maximum: 1.8446744073709552e+19
           minimum: 0
@@ -3895,6 +3914,8 @@ components:
           type: string
         SecretID:
           type: string
+        Submission:
+          $ref: '#/components/schemas/JobSubmission'
       type: object
     JobRegisterResponse:
       properties:
@@ -3993,6 +4014,19 @@ components:
           minimum: 0
           type: integer
       type: object
+    JobSubmission:
+      properties:
+        Format:
+          type: string
+        Source:
+          type: string
+        VariableFlags:
+          additionalProperties:
+            type: string
+          type: object
+        Variables:
+          type: string
+      type: object
     JobSummary:
       properties:
         Children:
@@ -4069,11 +4103,17 @@ components:
           type: boolean
         JobHCL:
           type: string
+        Variables:
+          type: string
         hclv1:
           type: boolean
       type: object
     LogConfig:
       properties:
+        Disabled:
+          type: boolean
+        Enabled:
+          type: boolean
         MaxFileSizeMB:
           type: integer
         MaxFiles:
@@ -5355,6 +5395,8 @@ components:
           additionalProperties:
             type: string
           type: object
+        Identity:
+          $ref: '#/components/schemas/WorkloadIdentity'
         KillSignal:
           type: string
         KillTimeout:
@@ -5688,6 +5730,8 @@ components:
           type: string
         Envvars:
           type: boolean
+        ErrMissingKey:
+          type: boolean
         Gid:
           type: integer
         LeftDelim:
@@ -5838,6 +5882,13 @@ components:
         Min:
           format: int64
           type: integer
+      type: object
+    WorkloadIdentity:
+      properties:
+        Env:
+          type: boolean
+        File:
+          type: boolean
       type: object
     float32:
       format: float

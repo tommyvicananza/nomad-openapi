@@ -1,6 +1,3 @@
-// Copyright (c) HashiCorp, Inc.
-// SPDX-License-Identifier: MPL-2.0
-
 /*
  * Nomad
  *
@@ -34,6 +31,8 @@ pub struct JobRegisterRequest {
     pub region: Option<String>,
     #[serde(rename = "SecretID", skip_serializing_if = "Option::is_none")]
     pub secret_id: Option<String>,
+    #[serde(rename = "Submission", skip_serializing_if = "Option::is_none")]
+    pub submission: Option<Box<crate::models::JobSubmission>>,
 }
 
 impl JobRegisterRequest {
@@ -48,6 +47,7 @@ impl JobRegisterRequest {
             preserve_counts: None,
             region: None,
             secret_id: None,
+            submission: None,
         }
     }
 }

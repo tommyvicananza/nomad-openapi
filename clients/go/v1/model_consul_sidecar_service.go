@@ -18,6 +18,7 @@ import (
 // ConsulSidecarService struct for ConsulSidecarService
 type ConsulSidecarService struct {
 	DisableDefaultTCPCheck *bool `json:"DisableDefaultTCPCheck,omitempty"`
+	Meta *map[string]string `json:"Meta,omitempty"`
 	Port *string `json:"Port,omitempty"`
 	Proxy *ConsulProxy `json:"Proxy,omitempty"`
 	Tags *[]string `json:"Tags,omitempty"`
@@ -70,6 +71,38 @@ func (o *ConsulSidecarService) HasDisableDefaultTCPCheck() bool {
 // SetDisableDefaultTCPCheck gets a reference to the given bool and assigns it to the DisableDefaultTCPCheck field.
 func (o *ConsulSidecarService) SetDisableDefaultTCPCheck(v bool) {
 	o.DisableDefaultTCPCheck = &v
+}
+
+// GetMeta returns the Meta field value if set, zero value otherwise.
+func (o *ConsulSidecarService) GetMeta() map[string]string {
+	if o == nil || o.Meta == nil {
+		var ret map[string]string
+		return ret
+	}
+	return *o.Meta
+}
+
+// GetMetaOk returns a tuple with the Meta field value if set, nil otherwise
+// and a boolean to check if the value has been set.
+func (o *ConsulSidecarService) GetMetaOk() (*map[string]string, bool) {
+	if o == nil || o.Meta == nil {
+		return nil, false
+	}
+	return o.Meta, true
+}
+
+// HasMeta returns a boolean if a field has been set.
+func (o *ConsulSidecarService) HasMeta() bool {
+	if o != nil && o.Meta != nil {
+		return true
+	}
+
+	return false
+}
+
+// SetMeta gets a reference to the given map[string]string and assigns it to the Meta field.
+func (o *ConsulSidecarService) SetMeta(v map[string]string) {
+	o.Meta = &v
 }
 
 // GetPort returns the Port field value if set, zero value otherwise.
@@ -172,6 +205,9 @@ func (o ConsulSidecarService) MarshalJSON() ([]byte, error) {
 	toSerialize := map[string]interface{}{}
 	if o.DisableDefaultTCPCheck != nil {
 		toSerialize["DisableDefaultTCPCheck"] = o.DisableDefaultTCPCheck
+	}
+	if o.Meta != nil {
+		toSerialize["Meta"] = o.Meta
 	}
 	if o.Port != nil {
 		toSerialize["Port"] = o.Port

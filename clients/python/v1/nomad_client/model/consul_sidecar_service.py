@@ -1,6 +1,3 @@
-# Copyright (c) HashiCorp, Inc.
-# SPDX-License-Identifier: MPL-2.0
-
 """
     Nomad
 
@@ -92,6 +89,7 @@ class ConsulSidecarService(ModelNormal):
         lazy_import()
         return {
             'disable_default_tcp_check': (bool,),  # noqa: E501
+            'meta': ({str: (str,)},),  # noqa: E501
             'port': (str,),  # noqa: E501
             'proxy': (ConsulProxy,),  # noqa: E501
             'tags': ([str],),  # noqa: E501
@@ -104,6 +102,7 @@ class ConsulSidecarService(ModelNormal):
 
     attribute_map = {
         'disable_default_tcp_check': 'DisableDefaultTCPCheck',  # noqa: E501
+        'meta': 'Meta',  # noqa: E501
         'port': 'Port',  # noqa: E501
         'proxy': 'Proxy',  # noqa: E501
         'tags': 'Tags',  # noqa: E501
@@ -151,6 +150,7 @@ class ConsulSidecarService(ModelNormal):
                                 through its discriminator because we passed in
                                 _visited_composed_classes = (Animal,)
             disable_default_tcp_check (bool): [optional]  # noqa: E501
+            meta ({str: (str,)}): [optional]  # noqa: E501
             port (str): [optional]  # noqa: E501
             proxy (ConsulProxy): [optional]  # noqa: E501
             tags ([str]): [optional]  # noqa: E501
@@ -236,6 +236,7 @@ class ConsulSidecarService(ModelNormal):
                                 through its discriminator because we passed in
                                 _visited_composed_classes = (Animal,)
             disable_default_tcp_check (bool): [optional]  # noqa: E501
+            meta ({str: (str,)}): [optional]  # noqa: E501
             port (str): [optional]  # noqa: E501
             proxy (ConsulProxy): [optional]  # noqa: E501
             tags ([str]): [optional]  # noqa: E501

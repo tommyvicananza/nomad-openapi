@@ -5,6 +5,7 @@
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **disable_default_tcp_check** | **bool** |  | [optional] 
+**meta** | **{str: (str,)}** |  | [optional] 
 **port** | **str** |  | [optional] 
 **proxy** | [**ConsulProxy**](ConsulProxy.md) |  | [optional] 
 **tags** | **[str]** |  | [optional] 

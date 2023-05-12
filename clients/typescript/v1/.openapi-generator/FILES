@@ -127,6 +127,7 @@ models/JobRevertRequest.ts
 models/JobScaleStatusResponse.ts
 models/JobStabilityRequest.ts
 models/JobStabilityResponse.ts
+models/JobSubmission.ts
 models/JobSummary.ts
 models/JobValidateRequest.ts
 models/JobValidateResponse.ts
@@ -222,6 +223,7 @@ models/Vault.ts
 models/VolumeMount.ts
 models/VolumeRequest.ts
 models/WaitConfig.ts
+models/WorkloadIdentity.ts
 models/all.ts
 package.json
 rxjsStub.ts

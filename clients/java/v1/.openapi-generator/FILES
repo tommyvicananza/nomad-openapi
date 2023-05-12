@@ -109,6 +109,7 @@ docs/JobRevertRequest.md
 docs/JobScaleStatusResponse.md
 docs/JobStabilityRequest.md
 docs/JobStabilityResponse.md
+docs/JobSubmission.md
 docs/JobSummary.md
 docs/JobValidateRequest.md
 docs/JobValidateResponse.md
@@ -216,6 +217,7 @@ docs/VolumeMount.md
 docs/VolumeRequest.md
 docs/VolumesApi.md
 docs/WaitConfig.md
+docs/WorkloadIdentity.md
 gradle.properties
 gradle/wrapper/gradle-wrapper.jar
 gradle/wrapper/gradle-wrapper.properties
@@ -360,6 +362,7 @@ src/main/java/io/nomadproject/client/models/JobRevertRequest.java
 src/main/java/io/nomadproject/client/models/JobScaleStatusResponse.java
 src/main/java/io/nomadproject/client/models/JobStabilityRequest.java
 src/main/java/io/nomadproject/client/models/JobStabilityResponse.java
+src/main/java/io/nomadproject/client/models/JobSubmission.java
 src/main/java/io/nomadproject/client/models/JobSummary.java
 src/main/java/io/nomadproject/client/models/JobValidateRequest.java
 src/main/java/io/nomadproject/client/models/JobValidateResponse.java
@@ -454,6 +457,7 @@ src/main/java/io/nomadproject/client/models/Vault.java
 src/main/java/io/nomadproject/client/models/VolumeMount.java
 src/main/java/io/nomadproject/client/models/VolumeRequest.java
 src/main/java/io/nomadproject/client/models/WaitConfig.java
+src/main/java/io/nomadproject/client/models/WorkloadIdentity.java
 src/test/java/io/nomadproject/client/api/AclApiTest.java
 src/test/java/io/nomadproject/client/api/AllocationsApiTest.java
 src/test/java/io/nomadproject/client/api/DeploymentsApiTest.java
@@ -569,6 +573,7 @@ src/test/java/io/nomadproject/client/models/JobRevertRequestTest.java
 src/test/java/io/nomadproject/client/models/JobScaleStatusResponseTest.java
 src/test/java/io/nomadproject/client/models/JobStabilityRequestTest.java
 src/test/java/io/nomadproject/client/models/JobStabilityResponseTest.java
+src/test/java/io/nomadproject/client/models/JobSubmissionTest.java
 src/test/java/io/nomadproject/client/models/JobSummaryTest.java
 src/test/java/io/nomadproject/client/models/JobTest.java
 src/test/java/io/nomadproject/client/models/JobValidateRequestTest.java
@@ -664,3 +669,4 @@ src/test/java/io/nomadproject/client/models/VaultTest.java
 src/test/java/io/nomadproject/client/models/VolumeMountTest.java
 src/test/java/io/nomadproject/client/models/VolumeRequestTest.java
 src/test/java/io/nomadproject/client/models/WaitConfigTest.java
+src/test/java/io/nomadproject/client/models/WorkloadIdentityTest.java

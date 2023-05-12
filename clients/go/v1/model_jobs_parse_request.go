@@ -19,6 +19,7 @@ import (
 type JobsParseRequest struct {
 	Canonicalize *bool `json:"Canonicalize,omitempty"`
 	JobHCL *string `json:"JobHCL,omitempty"`
+	Variables *string `json:"Variables,omitempty"`
 	Hclv1 *bool `json:"hclv1,omitempty"`
 }
 
@@ -103,6 +104,38 @@ func (o *JobsParseRequest) SetJobHCL(v string) {
 	o.JobHCL = &v
 }
 
+// GetVariables returns the Variables field value if set, zero value otherwise.
+func (o *JobsParseRequest) GetVariables() string {
+	if o == nil || o.Variables == nil {
+		var ret string
+		return ret
+	}
+	return *o.Variables
+}
+
+// GetVariablesOk returns a tuple with the Variables field value if set, nil otherwise
+// and a boolean to check if the value has been set.
+func (o *JobsParseRequest) GetVariablesOk() (*string, bool) {
+	if o == nil || o.Variables == nil {
+		return nil, false
+	}
+	return o.Variables, true
+}
+
+// HasVariables returns a boolean if a field has been set.
+func (o *JobsParseRequest) HasVariables() bool {
+	if o != nil && o.Variables != nil {
+		return true
+	}
+
+	return false
+}
+
+// SetVariables gets a reference to the given string and assigns it to the Variables field.
+func (o *JobsParseRequest) SetVariables(v string) {
+	o.Variables = &v
+}
+
 // GetHclv1 returns the Hclv1 field value if set, zero value otherwise.
 func (o *JobsParseRequest) GetHclv1() bool {
 	if o == nil || o.Hclv1 == nil {
@@ -142,6 +175,9 @@ func (o JobsParseRequest) MarshalJSON() ([]byte, error) {
 	}
 	if o.JobHCL != nil {
 		toSerialize["JobHCL"] = o.JobHCL
+	}
+	if o.Variables != nil {
+		toSerialize["Variables"] = o.Variables
 	}
 	if o.Hclv1 != nil {
 		toSerialize["hclv1"] = o.Hclv1

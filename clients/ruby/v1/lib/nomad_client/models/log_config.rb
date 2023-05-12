@@ -1,6 +1,3 @@
-# Copyright (c) HashiCorp, Inc.
-# SPDX-License-Identifier: MPL-2.0
-
 =begin
 #Nomad
 
@@ -18,6 +15,10 @@ require 'time'
 
 module NomadClient
   class LogConfig
+    attr_accessor :disabled
+
+    attr_accessor :enabled
+
     attr_accessor :max_file_size_mb
 
     attr_accessor :max_files
@@ -25,6 +26,8 @@ module NomadClient
     # Attribute mapping from ruby-style variable name to JSON key.
     def self.attribute_map
       {
+        :'disabled' => :'Disabled',
+        :'enabled' => :'Enabled',
         :'max_file_size_mb' => :'MaxFileSizeMB',
         :'max_files' => :'MaxFiles'
       }
@@ -38,6 +41,8 @@ module NomadClient
     # Attribute type mapping.
     def self.openapi_types
       {
+        :'disabled' => :'Boolean',
+        :'enabled' => :'Boolean',
         :'max_file_size_mb' => :'Integer',
         :'max_files' => :'Integer'
       }
@@ -63,6 +68,14 @@ module NomadClient
         end
         h[k.to_sym] = v
       }
+
+      if attributes.key?(:'disabled')
+        self.disabled = attributes[:'disabled']
+      end
+
+      if attributes.key?(:'enabled')
+        self.enabled = attributes[:'enabled']
+      end
 
       if attributes.key?(:'max_file_size_mb')
         self.max_file_size_mb = attributes[:'max_file_size_mb']
@@ -91,6 +104,8 @@ module NomadClient
     def ==(o)
       return true if self.equal?(o)
       self.class == o.class &&
+          disabled == o.disabled &&
+          enabled == o.enabled &&
           max_file_size_mb == o.max_file_size_mb &&
           max_files == o.max_files
     end
@@ -104,7 +119,7 @@ module NomadClient
     # Calculates hash code according to all attributes.
     # @return [Integer] Hash code
     def hash
-      [max_file_size_mb, max_files].hash
+      [disabled, enabled, max_file_size_mb, max_files].hash
     end
 
     # Builds the object from hash

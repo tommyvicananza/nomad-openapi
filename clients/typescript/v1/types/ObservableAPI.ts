@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 import { ResponseContext, RequestContext, HttpFile } from '../http/http';
 import * as models from '../models/all';
 import { Configuration} from '../configuration'
@@ -109,6 +104,7 @@ import { JobRevertRequest } from '../models/JobRevertRequest';
 import { JobScaleStatusResponse } from '../models/JobScaleStatusResponse';
 import { JobStabilityRequest } from '../models/JobStabilityRequest';
 import { JobStabilityResponse } from '../models/JobStabilityResponse';
+import { JobSubmission } from '../models/JobSubmission';
 import { JobSummary } from '../models/JobSummary';
 import { JobValidateRequest } from '../models/JobValidateRequest';
 import { JobValidateResponse } from '../models/JobValidateResponse';
@@ -203,6 +199,7 @@ import { Vault } from '../models/Vault';
 import { VolumeMount } from '../models/VolumeMount';
 import { VolumeRequest } from '../models/VolumeRequest';
 import { WaitConfig } from '../models/WaitConfig';
+import { WorkloadIdentity } from '../models/WorkloadIdentity';
 
 import { ACLApiRequestFactory, ACLApiResponseProcessor} from "../apis/ACLApi";
 export class ObservableACLApi {

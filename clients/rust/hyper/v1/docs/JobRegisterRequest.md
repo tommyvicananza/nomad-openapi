@@ -13,6 +13,7 @@ Name | Type | Description | Notes
 **preserve_counts** | Option<**bool**> |  | [optional]
 **region** | Option<**String**> |  | [optional]
 **secret_id** | Option<**String**> |  | [optional]
+**submission** | Option<[**crate::models::JobSubmission**](JobSubmission.md)> |  | [optional]
 
 [[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
 

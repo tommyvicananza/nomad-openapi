@@ -107,6 +107,7 @@ docs/JobRevertRequest.md
 docs/JobScaleStatusResponse.md
 docs/JobStabilityRequest.md
 docs/JobStabilityResponse.md
+docs/JobSubmission.md
 docs/JobSummary.md
 docs/JobValidateRequest.md
 docs/JobValidateResponse.md
@@ -214,6 +215,7 @@ docs/VolumeMount.md
 docs/VolumeRequest.md
 docs/VolumesApi.md
 docs/WaitConfig.md
+docs/WorkloadIdentity.md
 src/apis/acl_api.rs
 src/apis/allocations_api.rs
 src/apis/client.rs
@@ -338,6 +340,7 @@ src/models/job_revert_request.rs
 src/models/job_scale_status_response.rs
 src/models/job_stability_request.rs
 src/models/job_stability_response.rs
+src/models/job_submission.rs
 src/models/job_summary.rs
 src/models/job_validate_request.rs
 src/models/job_validate_response.rs
@@ -433,3 +436,4 @@ src/models/vault.rs
 src/models/volume_mount.rs
 src/models/volume_request.rs
 src/models/wait_config.rs
+src/models/workload_identity.rs

@@ -56,7 +56,7 @@ npm run build
 
 #### git
 
-If the library is hosted at a git repository, e.g.https://github.com/tommyvicananza/nomad-openapi/clients/javascript/v1
+If the library is hosted at a git repository, e.g.https://github.com/hashicorp/nomad-openapi/clients/javascript/v1
 then install it via:
 
 ```shell
@@ -336,6 +336,7 @@ Class | Method | HTTP request | Description
  - [nomad-client.JobScaleStatusResponse](docs/JobScaleStatusResponse.md)
  - [nomad-client.JobStabilityRequest](docs/JobStabilityRequest.md)
  - [nomad-client.JobStabilityResponse](docs/JobStabilityResponse.md)
+ - [nomad-client.JobSubmission](docs/JobSubmission.md)
  - [nomad-client.JobSummary](docs/JobSummary.md)
  - [nomad-client.JobValidateRequest](docs/JobValidateRequest.md)
  - [nomad-client.JobValidateResponse](docs/JobValidateResponse.md)
@@ -430,6 +431,7 @@ Class | Method | HTTP request | Description
  - [nomad-client.VolumeMount](docs/VolumeMount.md)
  - [nomad-client.VolumeRequest](docs/VolumeRequest.md)
  - [nomad-client.WaitConfig](docs/WaitConfig.md)
+ - [nomad-client.WorkloadIdentity](docs/WorkloadIdentity.md)
 
 
 ## Documentation for Authorization

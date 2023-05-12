@@ -5,6 +5,7 @@
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **disable_default_tcp_check** | Option<**bool**> |  | [optional]
+**meta** | Option<**::std::collections::HashMap<String, String>**> |  | [optional]
 **port** | Option<**String**> |  | [optional]
 **proxy** | Option<[**crate::models::ConsulProxy**](ConsulProxy.md)> |  | [optional]
 **tags** | Option<**Vec<String>**> |  | [optional]

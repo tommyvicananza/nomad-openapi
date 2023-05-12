@@ -17,9 +17,9 @@ Python >= 3.6
 If the python package is hosted on a repository, you can install directly using:
 
 ```sh
-pip install git+https://github.com/tommyvicananza/nomad-openapi/clients/python/v1.git
+pip install git+https://github.com/hashicorp/nomad-openapi/clients/python/v1.git
 ```
-(you may need to run `pip` with root permission: `sudo pip install git+https://github.com/tommyvicananza/nomad-openapi/clients/python/v1.git`)
+(you may need to run `pip` with root permission: `sudo pip install git+https://github.com/hashicorp/nomad-openapi/clients/python/v1.git`)
 
 Then import the package:
 ```python
@@ -302,6 +302,7 @@ Class | Method | HTTP request | Description
  - [JobScaleStatusResponse](docs/JobScaleStatusResponse.md)
  - [JobStabilityRequest](docs/JobStabilityRequest.md)
  - [JobStabilityResponse](docs/JobStabilityResponse.md)
+ - [JobSubmission](docs/JobSubmission.md)
  - [JobSummary](docs/JobSummary.md)
  - [JobValidateRequest](docs/JobValidateRequest.md)
  - [JobValidateResponse](docs/JobValidateResponse.md)
@@ -401,6 +402,7 @@ Class | Method | HTTP request | Description
  - [VolumeMount](docs/VolumeMount.md)
  - [VolumeRequest](docs/VolumeRequest.md)
  - [WaitConfig](docs/WaitConfig.md)
+ - [WorkloadIdentity](docs/WorkloadIdentity.md)
 
 
 ## Documentation For Authorization

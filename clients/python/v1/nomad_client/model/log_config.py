@@ -1,6 +1,3 @@
-# Copyright (c) HashiCorp, Inc.
-# SPDX-License-Identifier: MPL-2.0
-
 """
     Nomad
 
@@ -85,6 +82,8 @@ class LogConfig(ModelNormal):
                 and the value is attribute type.
         """
         return {
+            'disabled': (bool,),  # noqa: E501
+            'enabled': (bool,),  # noqa: E501
             'max_file_size_mb': (int,),  # noqa: E501
             'max_files': (int,),  # noqa: E501
         }
@@ -95,6 +94,8 @@ class LogConfig(ModelNormal):
 
 
     attribute_map = {
+        'disabled': 'Disabled',  # noqa: E501
+        'enabled': 'Enabled',  # noqa: E501
         'max_file_size_mb': 'MaxFileSizeMB',  # noqa: E501
         'max_files': 'MaxFiles',  # noqa: E501
     }
@@ -140,6 +141,8 @@ class LogConfig(ModelNormal):
                                 Animal class but this time we won't travel
                                 through its discriminator because we passed in
                                 _visited_composed_classes = (Animal,)
+            disabled (bool): [optional]  # noqa: E501
+            enabled (bool): [optional]  # noqa: E501
             max_file_size_mb (int): [optional]  # noqa: E501
             max_files (int): [optional]  # noqa: E501
         """
@@ -223,6 +226,8 @@ class LogConfig(ModelNormal):
                                 Animal class but this time we won't travel
                                 through its discriminator because we passed in
                                 _visited_composed_classes = (Animal,)
+            disabled (bool): [optional]  # noqa: E501
+            enabled (bool): [optional]  # noqa: E501
             max_file_size_mb (int): [optional]  # noqa: E501
             max_files (int): [optional]  # noqa: E501
         """

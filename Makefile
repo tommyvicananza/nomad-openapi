@@ -42,8 +42,8 @@ v1-%:
 
 .PHONY: update-nomad
 update-nomad:
-	(cd generator && go get github.com/hashicorp/nomad)
-	(cd generator && go get github.com/hashicorp/nomad/api)
+	(cd generator && go get github.com/hashicorp/nomad@v1.5.5)
+	(cd generator && go get github.com/hashicorp/nomad/api@latest)
 	(cd generator && go mod tidy)
 	@go get github.com/hashicorp/nomad
 	@go mod tidy

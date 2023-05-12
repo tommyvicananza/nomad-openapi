@@ -1,6 +1,3 @@
-# Copyright (c) HashiCorp, Inc.
-# SPDX-License-Identifier: MPL-2.0
-
 =begin
 #Nomad
 
@@ -20,6 +17,8 @@ module NomadClient
   class ConsulSidecarService
     attr_accessor :disable_default_tcp_check
 
+    attr_accessor :meta
+
     attr_accessor :port
 
     attr_accessor :proxy
@@ -30,6 +29,7 @@ module NomadClient
     def self.attribute_map
       {
         :'disable_default_tcp_check' => :'DisableDefaultTCPCheck',
+        :'meta' => :'Meta',
         :'port' => :'Port',
         :'proxy' => :'Proxy',
         :'tags' => :'Tags'
@@ -45,6 +45,7 @@ module NomadClient
     def self.openapi_types
       {
         :'disable_default_tcp_check' => :'Boolean',
+        :'meta' => :'Hash<String, String>',
         :'port' => :'String',
         :'proxy' => :'ConsulProxy',
         :'tags' => :'Array<String>'
@@ -74,6 +75,12 @@ module NomadClient
 
       if attributes.key?(:'disable_default_tcp_check')
         self.disable_default_tcp_check = attributes[:'disable_default_tcp_check']
+      end
+
+      if attributes.key?(:'meta')
+        if (value = attributes[:'meta']).is_a?(Hash)
+          self.meta = value
+        end
       end
 
       if attributes.key?(:'port')
@@ -110,6 +117,7 @@ module NomadClient
       return true if self.equal?(o)
       self.class == o.class &&
           disable_default_tcp_check == o.disable_default_tcp_check &&
+          meta == o.meta &&
           port == o.port &&
           proxy == o.proxy &&
           tags == o.tags
@@ -124,7 +132,7 @@ module NomadClient
     # Calculates hash code according to all attributes.
     # @return [Integer] Hash code
     def hash
-      [disable_default_tcp_check, port, proxy, tags].hash
+      [disable_default_tcp_check, meta, port, proxy, tags].hash
     end
 
     # Builds the object from hash

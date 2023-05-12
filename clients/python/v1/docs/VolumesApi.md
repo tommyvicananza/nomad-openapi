@@ -734,13 +734,42 @@ with nomad_client.ApiClient(configuration) as api_client:
                                                 native=True,
                                                 sidecar_service=ConsulSidecarService(
                                                     disable_default_tcp_check=True,
+                                                    meta={
+                                                        "key": "key_example",
+                                                    },
                                                     port="port_example",
                                                     proxy=ConsulProxy(
                                                         config={
                                                             "key": None,
                                                         },
+                                                        expose=ConsulExposeConfig(
+                                                            path=[
+                                                                ConsulExposePath(
+                                                                    listener_port="listener_port_example",
+                                                                    local_path_port=1,
+                                                                    path="path_example",
+                                                                    protocol="protocol_example",
+                                                                ),
+                                                            ],
+                                                            paths=[
+                                                                ConsulExposePath(
+                                                                    listener_port="listener_port_example",
+                                                                    local_path_port=1,
+                                                                    path="path_example",
+                                                                    protocol="protocol_example",
+                                                                ),
+                                                            ],
+                                                        ),
                                                         expose_config=ConsulExposeConfig(
                                                             path=[
+                                                                ConsulExposePath(
+                                                                    listener_port="listener_port_example",
+                                                                    local_path_port=1,
+                                                                    path="path_example",
+                                                                    protocol="protocol_example",
+                                                                ),
+                                                            ],
+                                                            paths=[
                                                                 ConsulExposePath(
                                                                     listener_port="listener_port_example",
                                                                     local_path_port=1,
@@ -753,6 +782,9 @@ with nomad_client.ApiClient(configuration) as api_client:
                                                         local_service_port=1,
                                                         upstreams=[
                                                             ConsulUpstream(
+                                                                config={
+                                                                    "key": None,
+                                                                },
                                                                 datacenter="datacenter_example",
                                                                 destination_name="destination_name_example",
                                                                 destination_namespace="destination_namespace_example",
@@ -779,6 +811,8 @@ with nomad_client.ApiClient(configuration) as api_client:
                                                     kill_signal="kill_signal_example",
                                                     kill_timeout=1,
                                                     log_config=LogConfig(
+                                                        disabled=True,
+                                                        enabled=True,
                                                         max_file_size_mb=1,
                                                         max_files=1,
                                                     ),
@@ -934,6 +968,10 @@ with nomad_client.ApiClient(configuration) as api_client:
                                             env={
                                                 "key": "key_example",
                                             },
+                                            identity=WorkloadIdentity(
+                                                env=True,
+                                                file=True,
+                                            ),
                                             kill_signal="kill_signal_example",
                                             kill_timeout=1,
                                             kind="kind_example",
@@ -943,6 +981,8 @@ with nomad_client.ApiClient(configuration) as api_client:
                                                 sidecar=True,
                                             ),
                                             log_config=LogConfig(
+                                                disabled=True,
+                                                enabled=True,
                                                 max_file_size_mb=1,
                                                 max_files=1,
                                             ),
@@ -1151,13 +1191,42 @@ with nomad_client.ApiClient(configuration) as api_client:
                                                         native=True,
                                                         sidecar_service=ConsulSidecarService(
                                                             disable_default_tcp_check=True,
+                                                            meta={
+                                                                "key": "key_example",
+                                                            },
                                                             port="port_example",
                                                             proxy=ConsulProxy(
                                                                 config={
                                                                     "key": None,
                                                                 },
+                                                                expose=ConsulExposeConfig(
+                                                                    path=[
+                                                                        ConsulExposePath(
+                                                                            listener_port="listener_port_example",
+                                                                            local_path_port=1,
+                                                                            path="path_example",
+                                                                            protocol="protocol_example",
+                                                                        ),
+                                                                    ],
+                                                                    paths=[
+                                                                        ConsulExposePath(
+                                                                            listener_port="listener_port_example",
+                                                                            local_path_port=1,
+                                                                            path="path_example",
+                                                                            protocol="protocol_example",
+                                                                        ),
+                                                                    ],
+                                                                ),
                                                                 expose_config=ConsulExposeConfig(
                                                                     path=[
+                                                                        ConsulExposePath(
+                                                                            listener_port="listener_port_example",
+                                                                            local_path_port=1,
+                                                                            path="path_example",
+                                                                            protocol="protocol_example",
+                                                                        ),
+                                                                    ],
+                                                                    paths=[
                                                                         ConsulExposePath(
                                                                             listener_port="listener_port_example",
                                                                             local_path_port=1,
@@ -1170,6 +1239,9 @@ with nomad_client.ApiClient(configuration) as api_client:
                                                                 local_service_port=1,
                                                                 upstreams=[
                                                                     ConsulUpstream(
+                                                                        config={
+                                                                            "key": None,
+                                                                        },
                                                                         datacenter="datacenter_example",
                                                                         destination_name="destination_name_example",
                                                                         destination_namespace="destination_namespace_example",
@@ -1196,6 +1268,8 @@ with nomad_client.ApiClient(configuration) as api_client:
                                                             kill_signal="kill_signal_example",
                                                             kill_timeout=1,
                                                             log_config=LogConfig(
+                                                                disabled=True,
+                                                                enabled=True,
                                                                 max_file_size_mb=1,
                                                                 max_files=1,
                                                             ),
@@ -1306,6 +1380,7 @@ with nomad_client.ApiClient(configuration) as api_client:
                                                     dest_path="dest_path_example",
                                                     embedded_tmpl="embedded_tmpl_example",
                                                     envvars=True,
+                                                    err_missing_key=True,
                                                     gid=1,
                                                     left_delim="left_delim_example",
                                                     perms="perms_example",
@@ -2184,13 +2259,42 @@ with nomad_client.ApiClient(configuration) as api_client:
                                                 native=True,
                                                 sidecar_service=ConsulSidecarService(
                                                     disable_default_tcp_check=True,
+                                                    meta={
+                                                        "key": "key_example",
+                                                    },
                                                     port="port_example",
                                                     proxy=ConsulProxy(
                                                         config={
                                                             "key": None,
                                                         },
+                                                        expose=ConsulExposeConfig(
+                                                            path=[
+                                                                ConsulExposePath(
+                                                                    listener_port="listener_port_example",
+                                                                    local_path_port=1,
+                                                                    path="path_example",
+                                                                    protocol="protocol_example",
+                                                                ),
+                                                            ],
+                                                            paths=[
+                                                                ConsulExposePath(
+                                                                    listener_port="listener_port_example",
+                                                                    local_path_port=1,
+                                                                    path="path_example",
+                                                                    protocol="protocol_example",
+                                                                ),
+                                                            ],
+                                                        ),
                                                         expose_config=ConsulExposeConfig(
                                                             path=[
+                                                                ConsulExposePath(
+                                                                    listener_port="listener_port_example",
+                                                                    local_path_port=1,
+                                                                    path="path_example",
+                                                                    protocol="protocol_example",
+                                                                ),
+                                                            ],
+                                                            paths=[
                                                                 ConsulExposePath(
                                                                     listener_port="listener_port_example",
                                                                     local_path_port=1,
@@ -2203,6 +2307,9 @@ with nomad_client.ApiClient(configuration) as api_client:
                                                         local_service_port=1,
                                                         upstreams=[
                                                             ConsulUpstream(
+                                                                config={
+                                                                    "key": None,
+                                                                },
                                                                 datacenter="datacenter_example",
                                                                 destination_name="destination_name_example",
                                                                 destination_namespace="destination_namespace_example",
@@ -2229,6 +2336,8 @@ with nomad_client.ApiClient(configuration) as api_client:
                                                     kill_signal="kill_signal_example",
                                                     kill_timeout=1,
                                                     log_config=LogConfig(
+                                                        disabled=True,
+                                                        enabled=True,
                                                         max_file_size_mb=1,
                                                         max_files=1,
                                                     ),
@@ -2384,6 +2493,10 @@ with nomad_client.ApiClient(configuration) as api_client:
                                             env={
                                                 "key": "key_example",
                                             },
+                                            identity=WorkloadIdentity(
+                                                env=True,
+                                                file=True,
+                                            ),
                                             kill_signal="kill_signal_example",
                                             kill_timeout=1,
                                             kind="kind_example",
@@ -2393,6 +2506,8 @@ with nomad_client.ApiClient(configuration) as api_client:
                                                 sidecar=True,
                                             ),
                                             log_config=LogConfig(
+                                                disabled=True,
+                                                enabled=True,
                                                 max_file_size_mb=1,
                                                 max_files=1,
                                             ),
@@ -2601,13 +2716,42 @@ with nomad_client.ApiClient(configuration) as api_client:
                                                         native=True,
                                                         sidecar_service=ConsulSidecarService(
                                                             disable_default_tcp_check=True,
+                                                            meta={
+                                                                "key": "key_example",
+                                                            },
                                                             port="port_example",
                                                             proxy=ConsulProxy(
                                                                 config={
                                                                     "key": None,
                                                                 },
+                                                                expose=ConsulExposeConfig(
+                                                                    path=[
+                                                                        ConsulExposePath(
+                                                                            listener_port="listener_port_example",
+                                                                            local_path_port=1,
+                                                                            path="path_example",
+                                                                            protocol="protocol_example",
+                                                                        ),
+                                                                    ],
+                                                                    paths=[
+                                                                        ConsulExposePath(
+                                                                            listener_port="listener_port_example",
+                                                                            local_path_port=1,
+                                                                            path="path_example",
+                                                                            protocol="protocol_example",
+                                                                        ),
+                                                                    ],
+                                                                ),
                                                                 expose_config=ConsulExposeConfig(
                                                                     path=[
+                                                                        ConsulExposePath(
+                                                                            listener_port="listener_port_example",
+                                                                            local_path_port=1,
+                                                                            path="path_example",
+                                                                            protocol="protocol_example",
+                                                                        ),
+                                                                    ],
+                                                                    paths=[
                                                                         ConsulExposePath(
                                                                             listener_port="listener_port_example",
                                                                             local_path_port=1,
@@ -2620,6 +2764,9 @@ with nomad_client.ApiClient(configuration) as api_client:
                                                                 local_service_port=1,
                                                                 upstreams=[
                                                                     ConsulUpstream(
+                                                                        config={
+                                                                            "key": None,
+                                                                        },
                                                                         datacenter="datacenter_example",
                                                                         destination_name="destination_name_example",
                                                                         destination_namespace="destination_namespace_example",
@@ -2646,6 +2793,8 @@ with nomad_client.ApiClient(configuration) as api_client:
                                                             kill_signal="kill_signal_example",
                                                             kill_timeout=1,
                                                             log_config=LogConfig(
+                                                                disabled=True,
+                                                                enabled=True,
                                                                 max_file_size_mb=1,
                                                                 max_files=1,
                                                             ),
@@ -2756,6 +2905,7 @@ with nomad_client.ApiClient(configuration) as api_client:
                                                     dest_path="dest_path_example",
                                                     embedded_tmpl="embedded_tmpl_example",
                                                     envvars=True,
+                                                    err_missing_key=True,
                                                     gid=1,
                                                     left_delim="left_delim_example",
                                                     perms="perms_example",
@@ -4706,13 +4856,42 @@ with nomad_client.ApiClient(configuration) as api_client:
                                                 native=True,
                                                 sidecar_service=ConsulSidecarService(
                                                     disable_default_tcp_check=True,
+                                                    meta={
+                                                        "key": "key_example",
+                                                    },
                                                     port="port_example",
                                                     proxy=ConsulProxy(
                                                         config={
                                                             "key": None,
                                                         },
+                                                        expose=ConsulExposeConfig(
+                                                            path=[
+                                                                ConsulExposePath(
+                                                                    listener_port="listener_port_example",
+                                                                    local_path_port=1,
+                                                                    path="path_example",
+                                                                    protocol="protocol_example",
+                                                                ),
+                                                            ],
+                                                            paths=[
+                                                                ConsulExposePath(
+                                                                    listener_port="listener_port_example",
+                                                                    local_path_port=1,
+                                                                    path="path_example",
+                                                                    protocol="protocol_example",
+                                                                ),
+                                                            ],
+                                                        ),
                                                         expose_config=ConsulExposeConfig(
                                                             path=[
+                                                                ConsulExposePath(
+                                                                    listener_port="listener_port_example",
+                                                                    local_path_port=1,
+                                                                    path="path_example",
+                                                                    protocol="protocol_example",
+                                                                ),
+                                                            ],
+                                                            paths=[
                                                                 ConsulExposePath(
                                                                     listener_port="listener_port_example",
                                                                     local_path_port=1,
@@ -4725,6 +4904,9 @@ with nomad_client.ApiClient(configuration) as api_client:
                                                         local_service_port=1,
                                                         upstreams=[
                                                             ConsulUpstream(
+                                                                config={
+                                                                    "key": None,
+                                                                },
                                                                 datacenter="datacenter_example",
                                                                 destination_name="destination_name_example",
                                                                 destination_namespace="destination_namespace_example",
@@ -4751,6 +4933,8 @@ with nomad_client.ApiClient(configuration) as api_client:
                                                     kill_signal="kill_signal_example",
                                                     kill_timeout=1,
                                                     log_config=LogConfig(
+                                                        disabled=True,
+                                                        enabled=True,
                                                         max_file_size_mb=1,
                                                         max_files=1,
                                                     ),
@@ -4906,6 +5090,10 @@ with nomad_client.ApiClient(configuration) as api_client:
                                             env={
                                                 "key": "key_example",
                                             },
+                                            identity=WorkloadIdentity(
+                                                env=True,
+                                                file=True,
+                                            ),
                                             kill_signal="kill_signal_example",
                                             kill_timeout=1,
                                             kind="kind_example",
@@ -4915,6 +5103,8 @@ with nomad_client.ApiClient(configuration) as api_client:
                                                 sidecar=True,
                                             ),
                                             log_config=LogConfig(
+                                                disabled=True,
+                                                enabled=True,
                                                 max_file_size_mb=1,
                                                 max_files=1,
                                             ),
@@ -5123,13 +5313,42 @@ with nomad_client.ApiClient(configuration) as api_client:
                                                         native=True,
                                                         sidecar_service=ConsulSidecarService(
                                                             disable_default_tcp_check=True,
+                                                            meta={
+                                                                "key": "key_example",
+                                                            },
                                                             port="port_example",
                                                             proxy=ConsulProxy(
                                                                 config={
                                                                     "key": None,
                                                                 },
+                                                                expose=ConsulExposeConfig(
+                                                                    path=[
+                                                                        ConsulExposePath(
+                                                                            listener_port="listener_port_example",
+                                                                            local_path_port=1,
+                                                                            path="path_example",
+                                                                            protocol="protocol_example",
+                                                                        ),
+                                                                    ],
+                                                                    paths=[
+                                                                        ConsulExposePath(
+                                                                            listener_port="listener_port_example",
+                                                                            local_path_port=1,
+                                                                            path="path_example",
+                                                                            protocol="protocol_example",
+                                                                        ),
+                                                                    ],
+                                                                ),
                                                                 expose_config=ConsulExposeConfig(
                                                                     path=[
+                                                                        ConsulExposePath(
+                                                                            listener_port="listener_port_example",
+                                                                            local_path_port=1,
+                                                                            path="path_example",
+                                                                            protocol="protocol_example",
+                                                                        ),
+                                                                    ],
+                                                                    paths=[
                                                                         ConsulExposePath(
                                                                             listener_port="listener_port_example",
                                                                             local_path_port=1,
@@ -5142,6 +5361,9 @@ with nomad_client.ApiClient(configuration) as api_client:
                                                                 local_service_port=1,
                                                                 upstreams=[
                                                                     ConsulUpstream(
+                                                                        config={
+                                                                            "key": None,
+                                                                        },
                                                                         datacenter="datacenter_example",
                                                                         destination_name="destination_name_example",
                                                                         destination_namespace="destination_namespace_example",
@@ -5168,6 +5390,8 @@ with nomad_client.ApiClient(configuration) as api_client:
                                                             kill_signal="kill_signal_example",
                                                             kill_timeout=1,
                                                             log_config=LogConfig(
+                                                                disabled=True,
+                                                                enabled=True,
                                                                 max_file_size_mb=1,
                                                                 max_files=1,
                                                             ),
@@ -5278,6 +5502,7 @@ with nomad_client.ApiClient(configuration) as api_client:
                                                     dest_path="dest_path_example",
                                                     embedded_tmpl="embedded_tmpl_example",
                                                     envvars=True,
+                                                    err_missing_key=True,
                                                     gid=1,
                                                     left_delim="left_delim_example",
                                                     perms="perms_example",
@@ -6156,13 +6381,42 @@ with nomad_client.ApiClient(configuration) as api_client:
                                                 native=True,
                                                 sidecar_service=ConsulSidecarService(
                                                     disable_default_tcp_check=True,
+                                                    meta={
+                                                        "key": "key_example",
+                                                    },
                                                     port="port_example",
                                                     proxy=ConsulProxy(
                                                         config={
                                                             "key": None,
                                                         },
+                                                        expose=ConsulExposeConfig(
+                                                            path=[
+                                                                ConsulExposePath(
+                                                                    listener_port="listener_port_example",
+                                                                    local_path_port=1,
+                                                                    path="path_example",
+                                                                    protocol="protocol_example",
+                                                                ),
+                                                            ],
+                                                            paths=[
+                                                                ConsulExposePath(
+                                                                    listener_port="listener_port_example",
+                                                                    local_path_port=1,
+                                                                    path="path_example",
+                                                                    protocol="protocol_example",
+                                                                ),
+                                                            ],
+                                                        ),
                                                         expose_config=ConsulExposeConfig(
                                                             path=[
+                                                                ConsulExposePath(
+                                                                    listener_port="listener_port_example",
+                                                                    local_path_port=1,
+                                                                    path="path_example",
+                                                                    protocol="protocol_example",
+                                                                ),
+                                                            ],
+                                                            paths=[
                                                                 ConsulExposePath(
                                                                     listener_port="listener_port_example",
                                                                     local_path_port=1,
@@ -6175,6 +6429,9 @@ with nomad_client.ApiClient(configuration) as api_client:
                                                         local_service_port=1,
                                                         upstreams=[
                                                             ConsulUpstream(
+                                                                config={
+                                                                    "key": None,
+                                                                },
                                                                 datacenter="datacenter_example",
                                                                 destination_name="destination_name_example",
                                                                 destination_namespace="destination_namespace_example",
@@ -6201,6 +6458,8 @@ with nomad_client.ApiClient(configuration) as api_client:
                                                     kill_signal="kill_signal_example",
                                                     kill_timeout=1,
                                                     log_config=LogConfig(
+                                                        disabled=True,
+                                                        enabled=True,
                                                         max_file_size_mb=1,
                                                         max_files=1,
                                                     ),
@@ -6356,6 +6615,10 @@ with nomad_client.ApiClient(configuration) as api_client:
                                             env={
                                                 "key": "key_example",
                                             },
+                                            identity=WorkloadIdentity(
+                                                env=True,
+                                                file=True,
+                                            ),
                                             kill_signal="kill_signal_example",
                                             kill_timeout=1,
                                             kind="kind_example",
@@ -6365,6 +6628,8 @@ with nomad_client.ApiClient(configuration) as api_client:
                                                 sidecar=True,
                                             ),
                                             log_config=LogConfig(
+                                                disabled=True,
+                                                enabled=True,
                                                 max_file_size_mb=1,
                                                 max_files=1,
                                             ),
@@ -6573,13 +6838,42 @@ with nomad_client.ApiClient(configuration) as api_client:
                                                         native=True,
                                                         sidecar_service=ConsulSidecarService(
                                                             disable_default_tcp_check=True,
+                                                            meta={
+                                                                "key": "key_example",
+                                                            },
                                                             port="port_example",
                                                             proxy=ConsulProxy(
                                                                 config={
                                                                     "key": None,
                                                                 },
+                                                                expose=ConsulExposeConfig(
+                                                                    path=[
+                                                                        ConsulExposePath(
+                                                                            listener_port="listener_port_example",
+                                                                            local_path_port=1,
+                                                                            path="path_example",
+                                                                            protocol="protocol_example",
+                                                                        ),
+                                                                    ],
+                                                                    paths=[
+                                                                        ConsulExposePath(
+                                                                            listener_port="listener_port_example",
+                                                                            local_path_port=1,
+                                                                            path="path_example",
+                                                                            protocol="protocol_example",
+                                                                        ),
+                                                                    ],
+                                                                ),
                                                                 expose_config=ConsulExposeConfig(
                                                                     path=[
+                                                                        ConsulExposePath(
+                                                                            listener_port="listener_port_example",
+                                                                            local_path_port=1,
+                                                                            path="path_example",
+                                                                            protocol="protocol_example",
+                                                                        ),
+                                                                    ],
+                                                                    paths=[
                                                                         ConsulExposePath(
                                                                             listener_port="listener_port_example",
                                                                             local_path_port=1,
@@ -6592,6 +6886,9 @@ with nomad_client.ApiClient(configuration) as api_client:
                                                                 local_service_port=1,
                                                                 upstreams=[
                                                                     ConsulUpstream(
+                                                                        config={
+                                                                            "key": None,
+                                                                        },
                                                                         datacenter="datacenter_example",
                                                                         destination_name="destination_name_example",
                                                                         destination_namespace="destination_namespace_example",
@@ -6618,6 +6915,8 @@ with nomad_client.ApiClient(configuration) as api_client:
                                                             kill_signal="kill_signal_example",
                                                             kill_timeout=1,
                                                             log_config=LogConfig(
+                                                                disabled=True,
+                                                                enabled=True,
                                                                 max_file_size_mb=1,
                                                                 max_files=1,
                                                             ),
@@ -6728,6 +7027,7 @@ with nomad_client.ApiClient(configuration) as api_client:
                                                     dest_path="dest_path_example",
                                                     embedded_tmpl="embedded_tmpl_example",
                                                     envvars=True,
+                                                    err_missing_key=True,
                                                     gid=1,
                                                     left_delim="left_delim_example",
                                                     perms="perms_example",
@@ -7894,13 +8194,42 @@ with nomad_client.ApiClient(configuration) as api_client:
                                                 native=True,
                                                 sidecar_service=ConsulSidecarService(
                                                     disable_default_tcp_check=True,
+                                                    meta={
+                                                        "key": "key_example",
+                                                    },
                                                     port="port_example",
                                                     proxy=ConsulProxy(
                                                         config={
                                                             "key": None,
                                                         },
+                                                        expose=ConsulExposeConfig(
+                                                            path=[
+                                                                ConsulExposePath(
+                                                                    listener_port="listener_port_example",
+                                                                    local_path_port=1,
+                                                                    path="path_example",
+                                                                    protocol="protocol_example",
+                                                                ),
+                                                            ],
+                                                            paths=[
+                                                                ConsulExposePath(
+                                                                    listener_port="listener_port_example",
+                                                                    local_path_port=1,
+                                                                    path="path_example",
+                                                                    protocol="protocol_example",
+                                                                ),
+                                                            ],
+                                                        ),
                                                         expose_config=ConsulExposeConfig(
                                                             path=[
+                                                                ConsulExposePath(
+                                                                    listener_port="listener_port_example",
+                                                                    local_path_port=1,
+                                                                    path="path_example",
+                                                                    protocol="protocol_example",
+                                                                ),
+                                                            ],
+                                                            paths=[
                                                                 ConsulExposePath(
                                                                     listener_port="listener_port_example",
                                                                     local_path_port=1,
@@ -7913,6 +8242,9 @@ with nomad_client.ApiClient(configuration) as api_client:
                                                         local_service_port=1,
                                                         upstreams=[
                                                             ConsulUpstream(
+                                                                config={
+                                                                    "key": None,
+                                                                },
                                                                 datacenter="datacenter_example",
                                                                 destination_name="destination_name_example",
                                                                 destination_namespace="destination_namespace_example",
@@ -7939,6 +8271,8 @@ with nomad_client.ApiClient(configuration) as api_client:
                                                     kill_signal="kill_signal_example",
                                                     kill_timeout=1,
                                                     log_config=LogConfig(
+                                                        disabled=True,
+                                                        enabled=True,
                                                         max_file_size_mb=1,
                                                         max_files=1,
                                                     ),
@@ -8094,6 +8428,10 @@ with nomad_client.ApiClient(configuration) as api_client:
                                             env={
                                                 "key": "key_example",
                                             },
+                                            identity=WorkloadIdentity(
+                                                env=True,
+                                                file=True,
+                                            ),
                                             kill_signal="kill_signal_example",
                                             kill_timeout=1,
                                             kind="kind_example",
@@ -8103,6 +8441,8 @@ with nomad_client.ApiClient(configuration) as api_client:
                                                 sidecar=True,
                                             ),
                                             log_config=LogConfig(
+                                                disabled=True,
+                                                enabled=True,
                                                 max_file_size_mb=1,
                                                 max_files=1,
                                             ),
@@ -8311,13 +8651,42 @@ with nomad_client.ApiClient(configuration) as api_client:
                                                         native=True,
                                                         sidecar_service=ConsulSidecarService(
                                                             disable_default_tcp_check=True,
+                                                            meta={
+                                                                "key": "key_example",
+                                                            },
                                                             port="port_example",
                                                             proxy=ConsulProxy(
                                                                 config={
                                                                     "key": None,
                                                                 },
+                                                                expose=ConsulExposeConfig(
+                                                                    path=[
+                                                                        ConsulExposePath(
+                                                                            listener_port="listener_port_example",
+                                                                            local_path_port=1,
+                                                                            path="path_example",
+                                                                            protocol="protocol_example",
+                                                                        ),
+                                                                    ],
+                                                                    paths=[
+                                                                        ConsulExposePath(
+                                                                            listener_port="listener_port_example",
+                                                                            local_path_port=1,
+                                                                            path="path_example",
+                                                                            protocol="protocol_example",
+                                                                        ),
+                                                                    ],
+                                                                ),
                                                                 expose_config=ConsulExposeConfig(
                                                                     path=[
+                                                                        ConsulExposePath(
+                                                                            listener_port="listener_port_example",
+                                                                            local_path_port=1,
+                                                                            path="path_example",
+                                                                            protocol="protocol_example",
+                                                                        ),
+                                                                    ],
+                                                                    paths=[
                                                                         ConsulExposePath(
                                                                             listener_port="listener_port_example",
                                                                             local_path_port=1,
@@ -8330,6 +8699,9 @@ with nomad_client.ApiClient(configuration) as api_client:
                                                                 local_service_port=1,
                                                                 upstreams=[
                                                                     ConsulUpstream(
+                                                                        config={
+                                                                            "key": None,
+                                                                        },
                                                                         datacenter="datacenter_example",
                                                                         destination_name="destination_name_example",
                                                                         destination_namespace="destination_namespace_example",
@@ -8356,6 +8728,8 @@ with nomad_client.ApiClient(configuration) as api_client:
                                                             kill_signal="kill_signal_example",
                                                             kill_timeout=1,
                                                             log_config=LogConfig(
+                                                                disabled=True,
+                                                                enabled=True,
                                                                 max_file_size_mb=1,
                                                                 max_files=1,
                                                             ),
@@ -8466,6 +8840,7 @@ with nomad_client.ApiClient(configuration) as api_client:
                                                     dest_path="dest_path_example",
                                                     embedded_tmpl="embedded_tmpl_example",
                                                     envvars=True,
+                                                    err_missing_key=True,
                                                     gid=1,
                                                     left_delim="left_delim_example",
                                                     perms="perms_example",
@@ -9344,13 +9719,42 @@ with nomad_client.ApiClient(configuration) as api_client:
                                                 native=True,
                                                 sidecar_service=ConsulSidecarService(
                                                     disable_default_tcp_check=True,
+                                                    meta={
+                                                        "key": "key_example",
+                                                    },
                                                     port="port_example",
                                                     proxy=ConsulProxy(
                                                         config={
                                                             "key": None,
                                                         },
+                                                        expose=ConsulExposeConfig(
+                                                            path=[
+                                                                ConsulExposePath(
+                                                                    listener_port="listener_port_example",
+                                                                    local_path_port=1,
+                                                                    path="path_example",
+                                                                    protocol="protocol_example",
+                                                                ),
+                                                            ],
+                                                            paths=[
+                                                                ConsulExposePath(
+                                                                    listener_port="listener_port_example",
+                                                                    local_path_port=1,
+                                                                    path="path_example",
+                                                                    protocol="protocol_example",
+                                                                ),
+                                                            ],
+                                                        ),
                                                         expose_config=ConsulExposeConfig(
                                                             path=[
+                                                                ConsulExposePath(
+                                                                    listener_port="listener_port_example",
+                                                                    local_path_port=1,
+                                                                    path="path_example",
+                                                                    protocol="protocol_example",
+                                                                ),
+                                                            ],
+                                                            paths=[
                                                                 ConsulExposePath(
                                                                     listener_port="listener_port_example",
                                                                     local_path_port=1,
@@ -9363,6 +9767,9 @@ with nomad_client.ApiClient(configuration) as api_client:
                                                         local_service_port=1,
                                                         upstreams=[
                                                             ConsulUpstream(
+                                                                config={
+                                                                    "key": None,
+                                                                },
                                                                 datacenter="datacenter_example",
                                                                 destination_name="destination_name_example",
                                                                 destination_namespace="destination_namespace_example",
@@ -9389,6 +9796,8 @@ with nomad_client.ApiClient(configuration) as api_client:
                                                     kill_signal="kill_signal_example",
                                                     kill_timeout=1,
                                                     log_config=LogConfig(
+                                                        disabled=True,
+                                                        enabled=True,
                                                         max_file_size_mb=1,
                                                         max_files=1,
                                                     ),
@@ -9544,6 +9953,10 @@ with nomad_client.ApiClient(configuration) as api_client:
                                             env={
                                                 "key": "key_example",
                                             },
+                                            identity=WorkloadIdentity(
+                                                env=True,
+                                                file=True,
+                                            ),
                                             kill_signal="kill_signal_example",
                                             kill_timeout=1,
                                             kind="kind_example",
@@ -9553,6 +9966,8 @@ with nomad_client.ApiClient(configuration) as api_client:
                                                 sidecar=True,
                                             ),
                                             log_config=LogConfig(
+                                                disabled=True,
+                                                enabled=True,
                                                 max_file_size_mb=1,
                                                 max_files=1,
                                             ),
@@ -9761,13 +10176,42 @@ with nomad_client.ApiClient(configuration) as api_client:
                                                         native=True,
                                                         sidecar_service=ConsulSidecarService(
                                                             disable_default_tcp_check=True,
+                                                            meta={
+                                                                "key": "key_example",
+                                                            },
                                                             port="port_example",
                                                             proxy=ConsulProxy(
                                                                 config={
                                                                     "key": None,
                                                                 },
+                                                                expose=ConsulExposeConfig(
+                                                                    path=[
+                                                                        ConsulExposePath(
+                                                                            listener_port="listener_port_example",
+                                                                            local_path_port=1,
+                                                                            path="path_example",
+                                                                            protocol="protocol_example",
+                                                                        ),
+                                                                    ],
+                                                                    paths=[
+                                                                        ConsulExposePath(
+                                                                            listener_port="listener_port_example",
+                                                                            local_path_port=1,
+                                                                            path="path_example",
+                                                                            protocol="protocol_example",
+                                                                        ),
+                                                                    ],
+                                                                ),
                                                                 expose_config=ConsulExposeConfig(
                                                                     path=[
+                                                                        ConsulExposePath(
+                                                                            listener_port="listener_port_example",
+                                                                            local_path_port=1,
+                                                                            path="path_example",
+                                                                            protocol="protocol_example",
+                                                                        ),
+                                                                    ],
+                                                                    paths=[
                                                                         ConsulExposePath(
                                                                             listener_port="listener_port_example",
                                                                             local_path_port=1,
@@ -9780,6 +10224,9 @@ with nomad_client.ApiClient(configuration) as api_client:
                                                                 local_service_port=1,
                                                                 upstreams=[
                                                                     ConsulUpstream(
+                                                                        config={
+                                                                            "key": None,
+                                                                        },
                                                                         datacenter="datacenter_example",
                                                                         destination_name="destination_name_example",
                                                                         destination_namespace="destination_namespace_example",
@@ -9806,6 +10253,8 @@ with nomad_client.ApiClient(configuration) as api_client:
                                                             kill_signal="kill_signal_example",
                                                             kill_timeout=1,
                                                             log_config=LogConfig(
+                                                                disabled=True,
+                                                                enabled=True,
                                                                 max_file_size_mb=1,
                                                                 max_files=1,
                                                             ),
@@ -9916,6 +10365,7 @@ with nomad_client.ApiClient(configuration) as api_client:
                                                     dest_path="dest_path_example",
                                                     embedded_tmpl="embedded_tmpl_example",
                                                     envvars=True,
+                                                    err_missing_key=True,
                                                     gid=1,
                                                     left_delim="left_delim_example",
                                                     perms="perms_example",

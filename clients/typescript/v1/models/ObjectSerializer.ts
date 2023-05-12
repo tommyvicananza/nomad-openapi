@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 export * from './ACLPolicy';
 export * from './ACLPolicyListStub';
 export * from './ACLToken';
@@ -104,6 +99,7 @@ export * from './JobRevertRequest';
 export * from './JobScaleStatusResponse';
 export * from './JobStabilityRequest';
 export * from './JobStabilityResponse';
+export * from './JobSubmission';
 export * from './JobSummary';
 export * from './JobValidateRequest';
 export * from './JobValidateResponse';
@@ -198,6 +194,7 @@ export * from './Vault';
 export * from './VolumeMount';
 export * from './VolumeRequest';
 export * from './WaitConfig';
+export * from './WorkloadIdentity';
 
 import { ACLPolicy } from './ACLPolicy';
 import { ACLPolicyListStub } from './ACLPolicyListStub';
@@ -300,6 +297,7 @@ import { JobRevertRequest } from './JobRevertRequest';
 import { JobScaleStatusResponse } from './JobScaleStatusResponse';
 import { JobStabilityRequest } from './JobStabilityRequest';
 import { JobStabilityResponse } from './JobStabilityResponse';
+import { JobSubmission } from './JobSubmission';
 import { JobSummary } from './JobSummary';
 import { JobValidateRequest } from './JobValidateRequest';
 import { JobValidateResponse } from './JobValidateResponse';
@@ -394,6 +392,7 @@ import { Vault } from './Vault';
 import { VolumeMount } from './VolumeMount';
 import { VolumeRequest } from './VolumeRequest';
 import { WaitConfig } from './WaitConfig';
+import { WorkloadIdentity } from './WorkloadIdentity';
 
 /* tslint:disable:no-unused-variable */
 let primitives = [
@@ -518,6 +517,7 @@ let typeMap: {[index: string]: any} = {
     "JobScaleStatusResponse": JobScaleStatusResponse,
     "JobStabilityRequest": JobStabilityRequest,
     "JobStabilityResponse": JobStabilityResponse,
+    "JobSubmission": JobSubmission,
     "JobSummary": JobSummary,
     "JobValidateRequest": JobValidateRequest,
     "JobValidateResponse": JobValidateResponse,
@@ -612,6 +612,7 @@ let typeMap: {[index: string]: any} = {
     "VolumeMount": VolumeMount,
     "VolumeRequest": VolumeRequest,
     "WaitConfig": WaitConfig,
+    "WorkloadIdentity": WorkloadIdentity,
 }
 
 export class ObjectSerializer {

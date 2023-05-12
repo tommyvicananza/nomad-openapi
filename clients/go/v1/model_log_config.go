@@ -17,6 +17,8 @@ import (
 
 // LogConfig struct for LogConfig
 type LogConfig struct {
+	Disabled *bool `json:"Disabled,omitempty"`
+	Enabled *bool `json:"Enabled,omitempty"`
 	MaxFileSizeMB *int32 `json:"MaxFileSizeMB,omitempty"`
 	MaxFiles *int32 `json:"MaxFiles,omitempty"`
 }
@@ -36,6 +38,70 @@ func NewLogConfig() *LogConfig {
 func NewLogConfigWithDefaults() *LogConfig {
 	this := LogConfig{}
 	return &this
+}
+
+// GetDisabled returns the Disabled field value if set, zero value otherwise.
+func (o *LogConfig) GetDisabled() bool {
+	if o == nil || o.Disabled == nil {
+		var ret bool
+		return ret
+	}
+	return *o.Disabled
+}
+
+// GetDisabledOk returns a tuple with the Disabled field value if set, nil otherwise
+// and a boolean to check if the value has been set.
+func (o *LogConfig) GetDisabledOk() (*bool, bool) {
+	if o == nil || o.Disabled == nil {
+		return nil, false
+	}
+	return o.Disabled, true
+}
+
+// HasDisabled returns a boolean if a field has been set.
+func (o *LogConfig) HasDisabled() bool {
+	if o != nil && o.Disabled != nil {
+		return true
+	}
+
+	return false
+}
+
+// SetDisabled gets a reference to the given bool and assigns it to the Disabled field.
+func (o *LogConfig) SetDisabled(v bool) {
+	o.Disabled = &v
+}
+
+// GetEnabled returns the Enabled field value if set, zero value otherwise.
+func (o *LogConfig) GetEnabled() bool {
+	if o == nil || o.Enabled == nil {
+		var ret bool
+		return ret
+	}
+	return *o.Enabled
+}
+
+// GetEnabledOk returns a tuple with the Enabled field value if set, nil otherwise
+// and a boolean to check if the value has been set.
+func (o *LogConfig) GetEnabledOk() (*bool, bool) {
+	if o == nil || o.Enabled == nil {
+		return nil, false
+	}
+	return o.Enabled, true
+}
+
+// HasEnabled returns a boolean if a field has been set.
+func (o *LogConfig) HasEnabled() bool {
+	if o != nil && o.Enabled != nil {
+		return true
+	}
+
+	return false
+}
+
+// SetEnabled gets a reference to the given bool and assigns it to the Enabled field.
+func (o *LogConfig) SetEnabled(v bool) {
+	o.Enabled = &v
 }
 
 // GetMaxFileSizeMB returns the MaxFileSizeMB field value if set, zero value otherwise.
@@ -104,6 +170,12 @@ func (o *LogConfig) SetMaxFiles(v int32) {
 
 func (o LogConfig) MarshalJSON() ([]byte, error) {
 	toSerialize := map[string]interface{}{}
+	if o.Disabled != nil {
+		toSerialize["Disabled"] = o.Disabled
+	}
+	if o.Enabled != nil {
+		toSerialize["Enabled"] = o.Enabled
+	}
 	if o.MaxFileSizeMB != nil {
 		toSerialize["MaxFileSizeMB"] = o.MaxFileSizeMB
 	}

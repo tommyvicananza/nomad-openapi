@@ -1,6 +1,3 @@
-# Copyright (c) HashiCorp, Inc.
-# SPDX-License-Identifier: MPL-2.0
-
 """
     Nomad
 
@@ -35,7 +32,9 @@ from nomad_client.exceptions import ApiAttributeError
 
 def lazy_import():
     from nomad_client.model.job import Job
+    from nomad_client.model.job_submission import JobSubmission
     globals()['Job'] = Job
+    globals()['JobSubmission'] = JobSubmission
 
 
 class JobRegisterRequest(ModelNormal):
@@ -104,6 +103,7 @@ class JobRegisterRequest(ModelNormal):
             'preserve_counts': (bool,),  # noqa: E501
             'region': (str,),  # noqa: E501
             'secret_id': (str,),  # noqa: E501
+            'submission': (JobSubmission,),  # noqa: E501
         }
 
     @cached_property
@@ -121,6 +121,7 @@ class JobRegisterRequest(ModelNormal):
         'preserve_counts': 'PreserveCounts',  # noqa: E501
         'region': 'Region',  # noqa: E501
         'secret_id': 'SecretID',  # noqa: E501
+        'submission': 'Submission',  # noqa: E501
     }
 
     read_only_vars = {
@@ -173,6 +174,7 @@ class JobRegisterRequest(ModelNormal):
             preserve_counts (bool): [optional]  # noqa: E501
             region (str): [optional]  # noqa: E501
             secret_id (str): [optional]  # noqa: E501
+            submission (JobSubmission): [optional]  # noqa: E501
         """
 
         _check_type = kwargs.pop('_check_type', True)
@@ -263,6 +265,7 @@ class JobRegisterRequest(ModelNormal):
             preserve_counts (bool): [optional]  # noqa: E501
             region (str): [optional]  # noqa: E501
             secret_id (str): [optional]  # noqa: E501
+            submission (JobSubmission): [optional]  # noqa: E501
         """
 
         _check_type = kwargs.pop('_check_type', True)
